@@ -7,6 +7,15 @@ import { default as Provider } from "../utils/dataProvider";
 
 const data = Provider.getOverallByRaceAndGender();
 
+
+const color = d3.scaleOrdinal()
+					.domain(["male", "female"])
+					.range(["steelblue", "tomato"]);
+
+const opacity = d3.scaleOrdinal()
+					.domain(["other", "technical", "leadership"])
+					.range([0.5, 0.8, 1]);
+
 class OverallByRaceStats extends React.PureComponent { 
 
 	constructor(props) {
@@ -24,11 +33,6 @@ class OverallByRaceStats extends React.PureComponent {
 				.outerRadius((d) => this.scaleRadius(d.radius.to))
 				.startAngle((d) => this.scaleAngle(d.angle.from))
 				.endAngle((d) => this.scaleAngle(d.angle.to));
-
-		this.color = d3.scaleOrdinal()
-							.domain(["male", "female"])
-							.range(["#12769A", "#CC2658"])
-
 	}
 
 	componentDidMount() {
@@ -62,13 +66,14 @@ class OverallByRaceStats extends React.PureComponent {
 							<g key={d.data.race}
 								transform={`translate(${ xCenter }, ${ yCenter })`}>
 								<g>
-									{ d.stack.map((s,i) => {
+									{ d.stack.map((s) => {
 										return (
 											<path 
 												key={ `${s.type}-${s.gender}`}
 												d={ this.arc(s) }
 												style={{ 
-													fill: this.color(s.gender),
+													fill: color(s.gender),
+													fillOpacity: opacity(s.type),
 													stroke: "white",
 													strokeWidth: "0.5px"
 												}}

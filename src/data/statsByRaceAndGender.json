@@ -1,236 +1,94 @@
 [
   {
-    "race": "all",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "count": 60806
-          },
-          {
-            "gender": "male",
-            "count": 36944
-          },
-          {
-            "gender": "female",
-            "count": 23862
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "count": 16218
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "count": 2073
-          }
-        ]
-      }
-    ]
-  },
-  {
     "race": "white",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "male",
-            "count": 22241
-          },
-          {
-            "gender": "female",
-            "count": 14188
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "male",
-            "count": 7643
-          },
-          {
-            "gender": "female",
-            "count": 1461
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "male",
-            "count": 1177
-          },
-          {
-            "gender": "female",
-            "count": 364
-          }
-        ]
-      }
-    ]
+    "all": {
+      "total": 36429,
+      "male": 22241,
+      "female": 14188
+    },
+    "technical": {
+      "total": 9104,
+      "male": 7643,
+      "female": 1461
+    },
+    "leadership": {
+      "total": 1541,
+      "male": 1177,
+      "female": 364
+    },
+    "other": {
+      "total": 25784,
+      "male": 13421,
+      "female": 12363
+    }
   },
   {
     "race": "asian",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "male",
-            "count": 8085
-          },
-          {
-            "gender": "female",
-            "count": 5255
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "male",
-            "count": 4054
-          },
-          {
-            "gender": "female",
-            "count": 1577
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "male",
-            "count": 306
-          },
-          {
-            "gender": "female",
-            "count": 91
-          }
-        ]
-      }
-    ]
+    "all": {
+      "total": 13340,
+      "male": 8085,
+      "female": 5255
+    },
+    "technical": {
+      "total": 5631,
+      "male": 4054,
+      "female": 1577
+    },
+    "leadership": {
+      "total": 397,
+      "male": 306,
+      "female": 91
+    },
+    "other": {
+      "total": 7312,
+      "male": 3725,
+      "female": 3587
+    }
   },
   {
     "race": "black",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "male",
-            "count": 1231
-          },
-          {
-            "gender": "female",
-            "count": 918
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "male",
-            "count": 302
-          },
-          {
-            "gender": "female",
-            "count": 115
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "male",
-            "count": 29
-          },
-          {
-            "gender": "female",
-            "count": 7
-          }
-        ]
-      }
-    ]
+    "all": {
+      "total": 2149,
+      "male": 1231,
+      "female": 918
+    },
+    "technical": {
+      "total": 417,
+      "male": 302,
+      "female": 115
+    },
+    "leadership": {
+      "total": 36,
+      "male": 29,
+      "female": 7
+    },
+    "other": {
+      "total": 1696,
+      "male": 900,
+      "female": 796
+    }
   },
   {
     "race": "latinx",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "male",
-            "count": 2711
-          },
-          {
-            "gender": "female",
-            "count": 1870
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "male",
-            "count": 877
-          },
-          {
-            "gender": "female",
-            "count": 189
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "male",
-            "count": 83
-          },
-          {
-            "gender": "female",
-            "count": 16
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "race": "other",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "male",
-            "count": 2676
-          },
-          {
-            "gender": "female",
-            "count": 1631
-          }
-        ]
-      }
-    ]
+    "all": {
+      "total": 4581,
+      "male": 2711,
+      "female": 1870
+    },
+    "technical": {
+      "total": 1066,
+      "male": 877,
+      "female": 189
+    },
+    "leadership": {
+      "total": 99,
+      "male": 83,
+      "female": 16
+    },
+    "other": {
+      "total": 3416,
+      "male": 1751,
+      "female": 1665
+    }
   }
 ]

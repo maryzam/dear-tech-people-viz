@@ -5,3 +5,8 @@
 text {
 	text-anchor: middle;
 }
+
+path {
+	stroke: white;
+	fill: none;
+}

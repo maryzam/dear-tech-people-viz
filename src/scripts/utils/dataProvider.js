@@ -2,10 +2,11 @@
 import overallByGender from "../../data/overallByGender.json";
 import overallByRaceGender from "../../data/statsByRaceAndGender.json";
 
-const positions = { other: true, technical: true, leadership: true };
+const roles = [ "other", "technical", "leadership"];
+const genders = ["male", "female"];
 
-function getPositions() {
-	return Object.keys(positions);
+function getRoles() {
+	return roles;
 }
 
 function getOverallByGender(total) {
@@ -37,40 +38,35 @@ function generatePoinst(gender, total, tech, leadership) {
 
 function getOverallByRaceAndGender() {
 
-	return overallByRaceGender.map((r) => {
+	return overallByRaceGender.map((d) => {
 			const result = { 
-				data: r,
-				ratio: r.all.female / r.all.total,
-				stack: []
+				race: d.race,
+				freq: d.freq,
+				ratio : {
+					female: d.all.female / d.all.total,
+					technical: d.technical.total / d.all.total,
+					leadership: d.leadership.total / d.all.total,
+					other: d.other.total / d.all.total
+				},
+				roles: []
 			};
-
-			let innerRadius = 0;
-			
-			for (let key in positions) {
-				const current = r[key];
-				const outerRadius = innerRadius + current.total / r.all.total;
-				const ratioAngle = current.female / current.total;
-				result.stack.push({
-					type: key,
-					gender: "female",
-					radius: { from: innerRadius, to: outerRadius},
-					angle: { from: 0, to: ratioAngle }
+			roles.forEach((role) => {
+				const current = d[role];
+				genders.forEach((gender) => {
+					result.roles.push({
+						role,
+						gender,
+						ratio: current[gender] / current.male,
+						key: `${role}_${gender}`
+					});
 				});
-				result.stack.push({
-					type: key,
-					gender: "male",
-					radius: { from: innerRadius, to: outerRadius},
-					angle: { from: ratioAngle, to: 1 }
-				});
-				innerRadius = outerRadius;
-			}
-
+			});
 			return result;
 		});
 };
 
 export default {
-	getPositions,
+	getRoles,
 	getOverallByRaceAndGender,
 	getOverallByGender
 };

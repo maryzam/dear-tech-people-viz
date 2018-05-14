@@ -1,6 +1,7 @@
 [
   {
     "race": "white",
+    "freq": 0.599,
     "all": {
       "total": 36429,
       "male": 22241,
@@ -24,6 +25,7 @@
   },
   {
     "race": "asian",
+    "freq": 0.219,
     "all": {
       "total": 13340,
       "male": 8085,
@@ -47,6 +49,7 @@
   },
   {
     "race": "black",
+    "freq": 0.035,
     "all": {
       "total": 2149,
       "male": 1231,
@@ -70,6 +73,7 @@
   },
   {
     "race": "latinx",
+    "freq": 0.075,
     "all": {
       "total": 4581,
       "male": 2711,

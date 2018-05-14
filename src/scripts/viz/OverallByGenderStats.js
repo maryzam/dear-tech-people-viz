@@ -6,18 +6,18 @@ import * as d3 from "d3";
 import { default as Provider } from "../utils/dataProvider";
 
 const data = Provider.getOverallByGender(600); // todo depends on element's size
-const positions = Provider.getPositions();
+const roles = Provider.getRoles();
 
 const color = d3.scaleOrdinal()
 					.domain(["male", "female"])
 					.range(["steelblue", "tomato"]);
 
 const opacity = d3.scaleBand()
-					.domain(positions)
+					.domain(roles)
 					.range([0.3, 1]);
 
 const strokeWidth = d3.scaleBand()
-						.domain(positions)
+						.domain(roles)
 						.range([6, 0]);
 
 class OverallByGenderStats extends React.PureComponent { 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v5.js"></script>
+  <style>
+  </style>
+</head>
+
+<body>
+	 <svg></svg>
+     <script type="text/javascript">
+         const width = 400;
+         const height = 400;
+
+         const types = [ "other", "technical", "leadership"];
+
+         const source = {
+         		    	"all": {
+      					  "total": 36429,
+					      "male": 22241,
+					      "female": 14188
+					    },
+					    "technical": {
+					      "total": 9104,
+					      "male": 7643,
+					      "female": 1461
+					    },
+					    "leadership": {
+					      "total": 1541,
+					      "male": 1177,
+					      "female": 364
+					    },
+					    "other": {
+					      "total": 25784,
+					      "male": 13421,
+					      "female": 12363
+					    }
+					};
+			
+		const data = [];
+		for (let i = 0; i < types.length; i++) {
+			const type = types[i];
+			const current = source[type];
+
+			data.push({
+				type: type,
+				gender: "male",
+				freq: current.male / source.all.total
+			});
+
+			data.push({
+				type: type,
+				gender: "female",
+				freq: current.female / source.all.total
+			});
+		}
+
+		const angle = (Math.PI * 2) / data.length;
+		const maxSize = Math.min(width, height) / 2;
+		const minSize = maxSize * 0.2;
+
+		const scaleSize = d3.scaleLinear()
+				.domain([0, d3.max(data, (d) => d.freq)])
+				.range([minSize, maxSize]);
+
+		function createTriangle(d) {
+        	const x1 = scaleSize(d.freq);
+        	const x2 = x1 / 2;
+        	const y2 = x2 * Math.tan(angle) * (d.gender === "male" ? -1: 1); 
+        	return `M 0 0 Q ${x2} ${y2} ${x1} 0 Z`
+        }
+
+		const scaleColor = d3.scaleOrdinal()
+					.domain(["male", "female"])
+					.range(["steelblue", "tomato"]);
+
+		const scaleRotation = d3.scaleBand()
+							.domain(types)
+							.range([30, 390]);
+
+
+        const container = d3.select("svg")
+                            .attr("width", width)
+                            .attr("height", height)
+                            .append("g")
+                            .attr("transform", `translate(${width / 2}, ${height / 2})`);
+        
+        container
+        	.append("g").attr("class", "by-types")
+        	.selectAll("path")
+        		.data(data).enter()
+        	.append("path")
+        		.attr("d", createTriangle)
+        		.attr("transform", (d) => `rotate(${ scaleRotation(d.type) })`)
+        		.style("fill", (d) => scaleColor(d.gender))
+        		.style("fill-opacity", 0.7)
+        		.style("stroke", "white");
+
+		const scaleAngle = d3.scaleLinear().range([-(Math.PI + angle - 0.2) / 2, (Math.PI - angle + 0.2) / 2])
+        const arc = d3.arc()
+        			.innerRadius(maxSize * 0.5)
+        			.outerRadius(maxSize * 0.5 + 10)
+        			.cornerRadius(3)
+        			.startAngle((d) => scaleAngle(d.from))
+					.endAngle((d) => scaleAngle(d.to));
+
+
+        const overallData = [{
+        	gender: "male",
+        	to: 1,
+        	from: source.all.female / source.all.total 
+        },
+        {
+        	gender: "female",
+        	to: source.all.female / source.all.total,
+        	from: 0
+        }]
+
+        container
+        	.append("g").attr("class", "overall")
+        	.selectAll("path")
+        	.data(overallData).enter()
+        	.append("path")
+        	.attr("d", arc)
+        	.style("fill",  (d) => scaleColor(d.gender))
+        	.style("fill-opacity",  1)
+        	.style("stroke", "white");
+
+     </script>
+</body>

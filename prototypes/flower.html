@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v5.js"></script>
+  <style>
+  </style>
+</head>
+
+<body>
+	 <svg></svg>
+     <script type="text/javascript">
+         const width = 400;
+         const height = 400;
+
+         const data = [
+            { x: 4, y: 12 },
+            { x: 1, y: 16 },
+            { x: 4, y: 12 },
+            { x: 4, y: 8 },
+            { x: 2, y: 7 },
+            { x: 4, y: 8 },
+            { x: 6, y: 3 },
+            { x: 6, y: 2 },
+            { x: 6, y: 3 },
+            { x: 10, y: 6 },
+            { x: 12, y: 4 },
+            { x: 10, y: 6 },
+            { x: 9, y: 14 },
+            //{ x: 12, y: 17 },
+            { x: 9, y: 14 }
+         ];
+
+         const scaleX = d3.scaleLinear()
+                                .domain([0, 20])
+                                .range([0, width]);
+
+         const scaleY = d3.scaleLinear()
+                                .domain([0, 20])
+                                .range([0, height]);
+         const line = d3.line()
+                            .x((d) => scaleX(d.x))
+                            .y((d) => scaleY(d.y))
+                            //.curve(d3.curveCardinalClosed.tension(0.5))
+                            .curve(d3.curveCatmullRomClosed.alpha(0.5))
+
+         const container = d3.select("svg")
+                            .attr("width", width)
+                            .attr("height", height);
+
+        container.append("path")
+                    .datum(data)
+                    .attr("d", line)
+                    .style("fill", "tomato")
+                    .style("stroke", "black");
+
+     </script>
+</body>

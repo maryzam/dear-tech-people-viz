@@ -1,0 +1,20 @@
+[
+  {
+    "position": "all",
+    "female": 23862,
+    "male": 36944,
+    "all": 60806
+  },
+  {
+    "position": "leadership",
+    "female": 478,
+    "male": 1595,
+    "all": 2073
+  },
+  {
+    "position": "technical",
+    "female": 3342,
+    "male": 12876,
+    "all": 16218
+  }
+]

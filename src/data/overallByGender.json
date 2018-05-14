@@ -1,0 +1,17 @@
+{
+  "all": {
+    "female": 23862,
+    "male": 36944,
+    "total": 60806
+  },
+  "leadership": {
+    "female": 478,
+    "male": 1595,
+    "total": 2073
+  },
+  "technical": {
+    "female": 3342,
+    "male": 12876,
+    "total": 16218
+  }
+}

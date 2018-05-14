@@ -21,7 +21,6 @@ overall <- sourceData %>%
   gather("category", "count", 1:31) %>%
   separate(category, base_keys, sep="_", fill="right", remove=TRUE) %>%
   mutate_at(base_keys, funs( if_else( . %in% overall_labels, "all", .) ))
-  
 
 result <- overall %>%
   group_by(race, position) %>%
@@ -31,4 +30,13 @@ result <- overall %>%
   toJSON(pretty = TRUE) %>%
   write_lines("../data/statsByRaceAndGender.json")
 
+overall %>%
+  filter(gender != "all", race != "all") %>%
+  group_by(position, gender) %>%
+    summarise(total = sum(count)) %>%
+    ungroup() %>%
+  spread(gender, total) %>%
+    mutate(all=(female + male)) %>%
+  toJSON(pretty = TRUE) %>%
+  write_lines("../data/overallByGender.json")
 

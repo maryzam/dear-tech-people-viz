@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from "prop-types"; 
 
 import OverallByRaceStats from "./viz/OverallByRaceStats";
+import OverallByGenderStats from "./viz/OverallByGenderStats";
 
 const Header = (props) => ( 
 	<header>TODO: Header</header>
@@ -16,10 +17,15 @@ const App = ({ width, height }) => (
 			<Header />
 			<div className="main"
 				 style={ { border: "1px solid black", padding: "20px" }} >
-				<OverallByRaceStats 
+				 <OverallByGenderStats 
 						width = { width } 
 						height = { height }	
 					/>
+				 <OverallByRaceStats 
+						width = { width } 
+						height = { height }	
+					/>
+
 			</div>
 			<Footer />
 		</div>

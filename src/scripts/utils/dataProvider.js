@@ -1,10 +1,38 @@
 
+import overallByGender from "../../data/overallByGender.json";
 import overallByRaceGender from "../../data/statsByRaceAndGender.json";
 
 const positions = { other: true, technical: true, leadership: true };
 
-function getOverallByGender() {
-	
+function getPositions() {
+	return Object.keys(positions);
+}
+
+function getOverallByGender(total) {
+	const perPoint = total / overallByGender.all.total;
+	const maleTotal = Math.round(overallByGender.all.male * perPoint);
+	const femaleTotal = total - maleTotal;
+	const maleTech = Math.round(overallByGender.technical.male * perPoint);
+	const femaleTech =Math.round(overallByGender.technical.female * perPoint);
+	const maleLead = Math.round(overallByGender.leadership.male * perPoint);
+	const femaleLead = Math.round(overallByGender.leadership.female * perPoint);
+
+	const points = generatePoinst("male", maleTotal, maleTech, maleLead);
+	const morePoints = generatePoinst("female", femaleTotal, femaleTech, femaleLead);
+	points.push(...morePoints);
+	return	points.sort(() => (Math.random() - 0.5));
+}
+
+function generatePoinst(gender, total, tech, leadership) {
+	const points = [];
+	const techLead = tech + leadership;
+	for (let i = 0; i < total; i++) {
+		const type = (i < leadership) ? "leadership" : 
+					(i < techLead) ? "technical" :
+					"other";
+		points.push({ gender, type });
+	}
+	return points;
 }
 
 function getOverallByRaceAndGender() {
@@ -42,5 +70,7 @@ function getOverallByRaceAndGender() {
 };
 
 export default {
-	getOverallByRaceAndGender
+	getPositions,
+	getOverallByRaceAndGender,
+	getOverallByGender
 };

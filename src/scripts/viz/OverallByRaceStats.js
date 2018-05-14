@@ -6,15 +6,15 @@ import * as d3 from "d3";
 import { default as Provider } from "../utils/dataProvider";
 
 const data = Provider.getOverallByRaceAndGender();
-
+const positions = Provider.getPositions();
 
 const color = d3.scaleOrdinal()
 					.domain(["male", "female"])
 					.range(["steelblue", "tomato"]);
 
-const opacity = d3.scaleOrdinal()
-					.domain(["other", "technical", "leadership"])
-					.range([0.5, 0.8, 1]);
+const opacity = d3.scaleBand()
+					.domain(positions)
+					.range([0.5, 1]);
 
 class OverallByRaceStats extends React.PureComponent { 
 

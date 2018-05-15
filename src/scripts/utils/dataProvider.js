@@ -21,6 +21,7 @@ function getOverallByGender(total) {
 	const points = generatePoinst("male", maleTotal, maleTech, maleLead);
 	const morePoints = generatePoinst("female", femaleTotal, femaleTech, femaleLead);
 	points.push(...morePoints);
+	points.forEach((d, i) => { d.id = i; });
 	return	points.sort(() => (Math.random() - 0.5));
 }
 

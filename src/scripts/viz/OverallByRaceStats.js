@@ -19,6 +19,10 @@ const scaleRoleColor = d3.scaleOrdinal()
 					.domain(roles)
 					.range(["#777", "#555", "#111"]);
 
+const scaleRoleOpacity = d3.scaleBand()
+					.domain(roles)
+					.range([0.3, 1]);
+
 const initRotation = Math.round(angle * (90 / Math.PI));
 const scaleRotation = d3.scaleBand()
 						.domain(roles)
@@ -79,7 +83,12 @@ class OverallByRaceStats extends React.PureComponent {
 								{ this.renderRoles(d) }
 								{ this.renderOverallGender(d) }
 								{ this.renderOverallRoles(d) }
-							</g>
+								<text dy="-5px">
+									<textPath href={`#${d.race}_other`} startOffset="25%"> 
+										{ d.race } 
+									</textPath>
+								</text>
+							</g>							
 						)})
 				}
 			</svg>
@@ -93,8 +102,8 @@ class OverallByRaceStats extends React.PureComponent {
 						d={ this.createLeaf(r) }
 						transform={ `rotate(${scaleRotation(r.role)})` }
 						style={{
-						fill: scaleGenderColor(r.gender),
-						fillOpacity: 0.7
+							fill: scaleGenderColor(r.gender),
+							fillOpacity: scaleRoleOpacity(r.role)
 						}}
 					/>
 				));
@@ -125,10 +134,9 @@ class OverallByRaceStats extends React.PureComponent {
 				start = end;
 				return (<path
 					key={`all_${r}`}
+					id={`${d.race}_${r}`}
 					d={ current }
-					style={{ 
-						fill: scaleRoleColor(r)
-					}}
+					style={{ fill: scaleRoleColor(r) }}
 				/>)
 			});
 	}
@@ -156,6 +164,16 @@ class OverallByRaceStats extends React.PureComponent {
 
     	return (ceilGrid.size > floorGrid.size) ? ceilGrid : floorGrid;
     }
+};
+
+OverallByRaceStats.propTypes = {
+	width: PropTypes.number.isRequired,
+	height: PropTypes.number.isRequired,
+	animDuration: PropTypes.number
+};
+
+OverallByGenderStats.defaultProps = {
+	animDuration: 1000
 };
 
 export default OverallByRaceStats;

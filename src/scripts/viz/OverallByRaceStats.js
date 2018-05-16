@@ -172,7 +172,7 @@ OverallByRaceStats.propTypes = {
 	animDuration: PropTypes.number
 };
 
-OverallByGenderStats.defaultProps = {
+OverallByRaceStats.defaultProps = {
 	animDuration: 1000
 };
 

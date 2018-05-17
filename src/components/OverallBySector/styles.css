@@ -18,5 +18,29 @@
 }
 
 .overall-by-gender .axis {
+	stroke: #aaa;
+	stroke-dasharray: 2 2;
+}
 
+.overall-by-gender .female {
+	fill: tomato;
+	fill-opacity: 0.5;
+	stroke: tomato;
+}
+
+.overall-by-gender .male {
+	fill: steelblue;
+	fill-opacity: 0.5;
+	stroke: steelblue;
+}
+
+.overall-by-gender .gap {
+	stroke: #333;
+}
+
+.overall-by-gender text {
+	text-anchor: end;
+	pointer-events: none;
+	font-size: 10px;
+	fill: #333;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from "prop-types"; 
 
-import OverallByRaceStats from "./viz/OverallByRaceStats";
-import OverallBySectorStats from "./viz/OverallBySectorStats";
-import OverallByGenderStats from "./viz/OverallByGenderStats";
+import OverallByGenderStats from "./OverallByGender/Visualization";
+import OverallBySectorStats from "./OverallBySector/Section";
+import OverallByRaceStats from "./OverallByRace/Visualization";
 
 const Header = (props) => ( 
 	<header>TODO: Header</header>

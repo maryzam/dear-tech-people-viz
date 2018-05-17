@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import * as d3 from "d3";
 
-import { default as Provider } from "../utils/dataProvider";
+import Provider from "../../utils/dataProvider";
 
 const roles = Provider.getRoles();
 const data = Provider.getOverallByRaceAndGender();
@@ -40,7 +40,7 @@ const arc = d3.arc()
 				.startAngle((d) => scaleArcAngle(d.from))
 				.endAngle((d) => scaleArcAngle(d.to));
 
-class OverallByRaceStats extends React.PureComponent { 
+class OverallByRaceViz extends React.PureComponent { 
 
 	constructor(props) {
 
@@ -166,14 +166,14 @@ class OverallByRaceStats extends React.PureComponent {
     }
 };
 
-OverallByRaceStats.propTypes = {
+OverallByRaceViz.propTypes = {
 	width: PropTypes.number.isRequired,
 	height: PropTypes.number.isRequired,
 	animDuration: PropTypes.number
 };
 
-OverallByRaceStats.defaultProps = {
+OverallByRaceViz.defaultProps = {
 	animDuration: 1000
 };
 
-export default OverallByRaceStats;
+export default OverallByRaceViz;

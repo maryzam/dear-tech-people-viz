@@ -1,0 +1,22 @@
+
+.overall-by-gender { }
+
+.overall-by-gender .btn {
+	color: #333;
+	background: #fff;
+	border: 1px solid #333;
+	padding: 3px 5px;
+	margin: 5px 1px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.overall-by-gender .btn:hover,
+.overall-by-gender .current {
+	color: #fff;
+  	background: #333;
+}
+
+.overall-by-gender .axis {
+
+}

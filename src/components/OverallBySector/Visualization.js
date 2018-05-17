@@ -3,12 +3,9 @@ import PropTypes from "prop-types";
 
 import * as d3 from "d3";
 
-import { default as Provider } from "../utils/dataProvider";
+import Provider from "../../utils/dataProvider";
 
-const roles = Provider.getRoles();
-const races = Provider.getRaces();
 const sectors = Provider.getSectors();
-
 const data = Provider.getOverallBySectors();
 
 class OverallBySectorStats extends React.PureComponent {
@@ -53,31 +50,32 @@ class OverallBySectorStats extends React.PureComponent {
 
 		const { width, height, race, role } = this.props;
 		const xOffset = width / 2;
+		const margin = 50; //todo
 		return (
 			<svg ref={ this.setVizRef }
 					className="overall-by-gender"
 					width={width} 
-					height={height} >
+					height={height - margin} >
 				{
 					data[race].map((d) => {
 						return (
 							<g key={ d.sector }
 								transform={`translate(0, ${this.scaleSectors(d.sector)})`}>
-								<circle 
-									cx={this.scaleFreq(d[role].freq.male)} cy={0}
-									r={ this.scaleTotal(d[role].male)} 
-									style={{ fill: "steelblue" }}/>	
-								<circle 
-									cx={this.scaleFreq(d[role].freq.female)} cy={0} 
-									r={ this.scaleTotal(d[role].female)} 
-									style={{ fill: "tomato" }} />	
-								<line 
-									x1={this.scaleFreq(d[role].freq.female)} y1={0} 
-									x2={this.scaleFreq(d[role].freq.male)} y2={0} 
-									style= {{ stroke: "#333" }}/>	
-								<text transform={`translate(${xOffset}, 0)`}>
-									{d.sector}
-								</text>
+							<circle 
+								cx={this.scaleFreq(d[role].freq.male)} cy={0}
+								r={ this.scaleTotal(d[role].male)} 
+								style={{ fill: "steelblue" }}/>	
+							<circle 
+								cx={this.scaleFreq(d[role].freq.female)} cy={0} 
+								r={ this.scaleTotal(d[role].female)} 
+								style={{ fill: "tomato" }} />	
+							<line 
+								x1={this.scaleFreq(d[role].freq.female)} y1={0} 
+								x2={this.scaleFreq(d[role].freq.male)} y2={0} 
+								style= {{ stroke: "#333" }}/>	
+							<text transform={`translate(${xOffset}, 0)`}>
+								{d.sector}
+							</text>
 							</g>
 						);
 					})

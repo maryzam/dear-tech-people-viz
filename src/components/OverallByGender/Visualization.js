@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 import * as d3 from "d3";
 
-import { default as Provider } from "../utils/dataProvider";
+import Provider from "../../utils/dataProvider";
 
-import '../../styles/viz/overall-by-gender.css';
+import './styles.css';
 
 function getModeOptions(mode) {
 	const opts = {
@@ -30,7 +30,7 @@ function getModeOptions(mode) {
 	return opts;
 }
 
-const data = Provider.getOverallByGender(600); // todo depends on element's size
+const data = Provider.getOverallByGender(600); // todo depends on element's size?
 const roles = Provider.getRoles();
 
 const scaleColor = d3.scaleOrdinal()
@@ -50,7 +50,7 @@ const zeroOpacity = 1e-6;
 const baseOpacity = scaleOpacity("other");
 const baseStroke = `${scaleStroke("other")}px`;
 
-class OverallByGenderStats extends React.PureComponent { 
+class OverallByGenderViz extends React.PureComponent { 
 
 	constructor(props) {
 		super(props);
@@ -138,16 +138,16 @@ class OverallByGenderStats extends React.PureComponent {
 	}
 };
 
-OverallByGenderStats.propTypes = {
+OverallByGenderViz.propTypes = {
 	mode: PropTypes.string,
 	width: PropTypes.number.isRequired,
 	height: PropTypes.number.isRequired,
 	animDuration: PropTypes.number
 };
 
-OverallByGenderStats.defaultProps = {
+OverallByGenderViz.defaultProps = {
 	mode: "hidden",
 	animDuration: 1000
 };
 
-export default OverallByGenderStats;
+export default OverallByGenderViz;

@@ -286,4 +286,6 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
-March/package-lock.json
+
+data_preprocessing/.*
+data_preprocessing/.Rhistory

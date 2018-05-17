@@ -1,3149 +1,3766 @@
 [
   {
-    "sector": "aerospace?",
+    "position": "all",
     "data": [
       {
-        "position": "all",
+        "race": "all",
         "data": [
           {
-            "gender": "all",
-            "race": "all",
-            "count": 374
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "all",
+                "count": 374
+              },
+              {
+                "gender": "male",
+                "count": 263
+              },
+              {
+                "gender": "female",
+                "count": 111
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "all",
-            "count": 263
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "all",
+                "count": 956
+              },
+              {
+                "gender": "male",
+                "count": 734
+              },
+              {
+                "gender": "female",
+                "count": 222
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "white",
-            "count": 185
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "all",
+                "count": 8935
+              },
+              {
+                "gender": "male",
+                "count": 6132
+              },
+              {
+                "gender": "female",
+                "count": 2803
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "asian",
-            "count": 47
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "all",
+                "count": 238
+              },
+              {
+                "gender": "male",
+                "count": 171
+              },
+              {
+                "gender": "female",
+                "count": 67
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "black",
-            "count": 5
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "all",
+                "count": 8535
+              },
+              {
+                "gender": "male",
+                "count": 3444
+              },
+              {
+                "gender": "female",
+                "count": 5091
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "latinx",
-            "count": 19
+            "sector": "education",
+            "data": [
+              {
+                "gender": "all",
+                "count": 745
+              },
+              {
+                "gender": "male",
+                "count": 461
+              },
+              {
+                "gender": "female",
+                "count": 284
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "other",
-            "count": 7
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "all",
+                "count": 5639
+              },
+              {
+                "gender": "male",
+                "count": 3602
+              },
+              {
+                "gender": "female",
+                "count": 2037
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "all",
-            "count": 111
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "all",
+                "count": 405
+              },
+              {
+                "gender": "male",
+                "count": 327
+              },
+              {
+                "gender": "female",
+                "count": 78
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "white",
-            "count": 68
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "all",
+                "count": 4779
+              },
+              {
+                "gender": "male",
+                "count": 3351
+              },
+              {
+                "gender": "female",
+                "count": 1428
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "asian",
-            "count": 24
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "all",
+                "count": 2455
+              },
+              {
+                "gender": "male",
+                "count": 1168
+              },
+              {
+                "gender": "female",
+                "count": 1287
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "black",
-            "count": 3
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "all",
+                "count": 6881
+              },
+              {
+                "gender": "male",
+                "count": 5066
+              },
+              {
+                "gender": "female",
+                "count": 1815
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "latinx",
-            "count": 9
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "all",
+                "count": 3068
+              },
+              {
+                "gender": "male",
+                "count": 1956
+              },
+              {
+                "gender": "female",
+                "count": 1112
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "other",
-            "count": 7
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "all",
+                "count": 5227
+              },
+              {
+                "gender": "male",
+                "count": 2844
+              },
+              {
+                "gender": "female",
+                "count": 2383
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "all",
+                "count": 1835
+              },
+              {
+                "gender": "male",
+                "count": 860
+              },
+              {
+                "gender": "female",
+                "count": 975
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "all",
+                "count": 5461
+              },
+              {
+                "gender": "male",
+                "count": 3423
+              },
+              {
+                "gender": "female",
+                "count": 2038
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "all",
+                "count": 4025
+              },
+              {
+                "gender": "male",
+                "count": 2950
+              },
+              {
+                "gender": "female",
+                "count": 1075
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "all",
+                "count": 5796
+              },
+              {
+                "gender": "male",
+                "count": 3431
+              },
+              {
+                "gender": "female",
+                "count": 2365
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "all",
+                "count": 3172
+              },
+              {
+                "gender": "male",
+                "count": 1979
+              },
+              {
+                "gender": "female",
+                "count": 1193
+              }
+            ]
           }
         ]
       },
       {
-        "position": "technical",
+        "race": "white",
         "data": [
           {
-            "gender": "all",
-            "race": "all",
-            "count": 169
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 185
+              },
+              {
+                "gender": "female",
+                "count": 68
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "white",
-            "count": 95
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 451
+              },
+              {
+                "gender": "female",
+                "count": 100
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "asian",
-            "count": 21
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 3863
+              },
+              {
+                "gender": "female",
+                "count": 1546
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "black",
-            "count": 3
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 111
+              },
+              {
+                "gender": "female",
+                "count": 34
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "latinx",
-            "count": 9
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2033
+              },
+              {
+                "gender": "female",
+                "count": 3462
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "white",
-            "count": 28
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 268
+              },
+              {
+                "gender": "female",
+                "count": 162
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "asian",
-            "count": 10
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2243
+              },
+              {
+                "gender": "female",
+                "count": 1158
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "black",
-            "count": 1
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 259
+              },
+              {
+                "gender": "female",
+                "count": 64
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "latinx",
-            "count": 2
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1992
+              },
+              {
+                "gender": "female",
+                "count": 749
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 682
+              },
+              {
+                "gender": "female",
+                "count": 759
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 3065
+              },
+              {
+                "gender": "female",
+                "count": 985
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1298
+              },
+              {
+                "gender": "female",
+                "count": 685
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1687
+              },
+              {
+                "gender": "female",
+                "count": 1494
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 574
+              },
+              {
+                "gender": "female",
+                "count": 635
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1973
+              },
+              {
+                "gender": "female",
+                "count": 1148
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2033
+              },
+              {
+                "gender": "female",
+                "count": 690
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1372
+              },
+              {
+                "gender": "female",
+                "count": 1043
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1190
+              },
+              {
+                "gender": "female",
+                "count": 672
+              }
+            ]
           }
         ]
       },
       {
-        "position": "leadership",
+        "race": "asian",
         "data": [
           {
-            "gender": "all",
-            "race": "all",
-            "count": 22
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 47
+              },
+              {
+                "gender": "female",
+                "count": 24
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "white",
-            "count": 16
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 170
+              },
+              {
+                "gender": "female",
+                "count": 83
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "asian",
-            "count": 3
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1282
+              },
+              {
+                "gender": "female",
+                "count": 709
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "black",
-            "count": 0
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 27
+              },
+              {
+                "gender": "female",
+                "count": 21
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "latinx",
-            "count": 1
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 698
+              },
+              {
+                "gender": "female",
+                "count": 715
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "white",
-            "count": 2
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 101
+              },
+              {
+                "gender": "female",
+                "count": 76
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "asian",
-            "count": 0
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 794
+              },
+              {
+                "gender": "female",
+                "count": 540
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "black",
-            "count": 0
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 26
+              },
+              {
+                "gender": "female",
+                "count": 6
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "latinx",
-            "count": 0
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 614
+              },
+              {
+                "gender": "female",
+                "count": 351
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 289
+              },
+              {
+                "gender": "female",
+                "count": 301
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1281
+              },
+              {
+                "gender": "female",
+                "count": 562
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 323
+              },
+              {
+                "gender": "female",
+                "count": 205
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 718
+              },
+              {
+                "gender": "female",
+                "count": 566
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 109
+              },
+              {
+                "gender": "female",
+                "count": 136
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 765
+              },
+              {
+                "gender": "female",
+                "count": 440
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 575
+              },
+              {
+                "gender": "female",
+                "count": 237
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 883
+              },
+              {
+                "gender": "female",
+                "count": 553
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 468
+              },
+              {
+                "gender": "female",
+                "count": 333
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "race": "black",
+        "data": [
+          {
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 5
+              },
+              {
+                "gender": "female",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 19
+              },
+              {
+                "gender": "female",
+                "count": 4
+              }
+            ]
+          },
+          {
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 151
+              },
+              {
+                "gender": "female",
+                "count": 73
+              }
+            ]
+          },
+          {
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 10
+              },
+              {
+                "gender": "female",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 200
+              },
+              {
+                "gender": "female",
+                "count": 224
+              }
+            ]
+          },
+          {
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 24
+              },
+              {
+                "gender": "female",
+                "count": 9
+              }
+            ]
+          },
+          {
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 107
+              },
+              {
+                "gender": "female",
+                "count": 86
+              }
+            ]
+          },
+          {
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 5
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 105
+              },
+              {
+                "gender": "female",
+                "count": 64
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 49
+              },
+              {
+                "gender": "female",
+                "count": 66
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 143
+              },
+              {
+                "gender": "female",
+                "count": 50
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 57
+              },
+              {
+                "gender": "female",
+                "count": 38
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 115
+              },
+              {
+                "gender": "female",
+                "count": 102
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 62
+              },
+              {
+                "gender": "female",
+                "count": 80
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 91
+              },
+              {
+                "gender": "female",
+                "count": 72
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 80
+              },
+              {
+                "gender": "female",
+                "count": 31
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 97
+              },
+              {
+                "gender": "female",
+                "count": 71
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 74
+              },
+              {
+                "gender": "female",
+                "count": 35
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "race": "latinx",
+        "data": [
+          {
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 19
+              },
+              {
+                "gender": "female",
+                "count": 9
+              }
+            ]
+          },
+          {
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 66
+              },
+              {
+                "gender": "female",
+                "count": 23
+              }
+            ]
+          },
+          {
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 353
+              },
+              {
+                "gender": "female",
+                "count": 210
+              }
+            ]
+          },
+          {
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 19
+              },
+              {
+                "gender": "female",
+                "count": 8
+              }
+            ]
+          },
+          {
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 386
+              },
+              {
+                "gender": "female",
+                "count": 470
+              }
+            ]
+          },
+          {
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 23
+              },
+              {
+                "gender": "female",
+                "count": 15
+              }
+            ]
+          },
+          {
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 223
+              },
+              {
+                "gender": "female",
+                "count": 129
+              }
+            ]
+          },
+          {
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 22
+              },
+              {
+                "gender": "female",
+                "count": 6
+              }
+            ]
+          },
+          {
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 234
+              },
+              {
+                "gender": "female",
+                "count": 99
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 99
+              },
+              {
+                "gender": "female",
+                "count": 107
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 370
+              },
+              {
+                "gender": "female",
+                "count": 161
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 132
+              },
+              {
+                "gender": "female",
+                "count": 80
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 265
+              },
+              {
+                "gender": "female",
+                "count": 201
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 82
+              },
+              {
+                "gender": "female",
+                "count": 94
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 237
+              },
+              {
+                "gender": "female",
+                "count": 152
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 174
+              },
+              {
+                "gender": "female",
+                "count": 93
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 250
+              },
+              {
+                "gender": "female",
+                "count": 163
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 96
+              },
+              {
+                "gender": "female",
+                "count": 56
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "race": "other",
+        "data": [
+          {
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 7
+              },
+              {
+                "gender": "female",
+                "count": 7
+              }
+            ]
+          },
+          {
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 28
+              },
+              {
+                "gender": "female",
+                "count": 12
+              }
+            ]
+          },
+          {
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 483
+              },
+              {
+                "gender": "female",
+                "count": 265
+              }
+            ]
+          },
+          {
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 4
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 127
+              },
+              {
+                "gender": "female",
+                "count": 220
+              }
+            ]
+          },
+          {
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 45
+              },
+              {
+                "gender": "female",
+                "count": 22
+              }
+            ]
+          },
+          {
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 235
+              },
+              {
+                "gender": "female",
+                "count": 124
+              }
+            ]
+          },
+          {
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 15
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 406
+              },
+              {
+                "gender": "female",
+                "count": 165
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 49
+              },
+              {
+                "gender": "female",
+                "count": 54
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 207
+              },
+              {
+                "gender": "female",
+                "count": 57
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 146
+              },
+              {
+                "gender": "female",
+                "count": 104
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 59
+              },
+              {
+                "gender": "female",
+                "count": 20
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 33
+              },
+              {
+                "gender": "female",
+                "count": 30
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 357
+              },
+              {
+                "gender": "female",
+                "count": 226
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 88
+              },
+              {
+                "gender": "female",
+                "count": 24
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 829
+              },
+              {
+                "gender": "female",
+                "count": 535
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 151
+              },
+              {
+                "gender": "female",
+                "count": 97
+              }
+            ]
           }
         ]
       }
     ]
   },
   {
-    "sector": "AI",
+    "position": "technical",
     "data": [
       {
-        "position": "all",
+        "race": "all",
         "data": [
           {
-            "gender": "all",
-            "race": "all",
-            "count": 956
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "all",
+                "count": 169
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "all",
-            "count": 734
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "all",
+                "count": 410
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "white",
-            "count": 451
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "all",
+                "count": 2661
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "asian",
-            "count": 170
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "all",
+                "count": 65
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "black",
-            "count": 19
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "all",
+                "count": 1042
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "latinx",
-            "count": 66
+            "sector": "education",
+            "data": [
+              {
+                "gender": "all",
+                "count": 225
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "other",
-            "count": 28
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "all",
+                "count": 1733
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "all",
-            "count": 222
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "all",
+                "count": 97
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "white",
-            "count": 100
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "all",
+                "count": 1643
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "asian",
-            "count": 83
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "all",
+                "count": 534
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "black",
-            "count": 4
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "all",
+                "count": 2552
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "latinx",
-            "count": 23
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "all",
+                "count": 787
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "other",
-            "count": 12
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "all",
+                "count": 1147
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "all",
+                "count": 191
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "all",
+                "count": 1477
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "all",
+                "count": 1323
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "all",
+                "count": 1480
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "all",
+                "count": 980
+              }
+            ]
           }
         ]
       },
       {
-        "position": "technical",
+        "race": "white",
         "data": [
           {
-            "gender": "all",
-            "race": "all",
-            "count": 410
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 95
+              },
+              {
+                "gender": "female",
+                "count": 28
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "white",
-            "count": 235
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 235
+              },
+              {
+                "gender": "female",
+                "count": 28
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "asian",
-            "count": 90
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1350
+              },
+              {
+                "gender": "female",
+                "count": 246
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "black",
-            "count": 3
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 39
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "latinx",
-            "count": 15
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 434
+              },
+              {
+                "gender": "female",
+                "count": 143
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "white",
-            "count": 28
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 105
+              },
+              {
+                "gender": "female",
+                "count": 35
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "asian",
-            "count": 33
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 905
+              },
+              {
+                "gender": "female",
+                "count": 137
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "black",
-            "count": 1
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 66
+              },
+              {
+                "gender": "female",
+                "count": 4
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "latinx",
-            "count": 5
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 922
+              },
+              {
+                "gender": "female",
+                "count": 115
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 240
+              },
+              {
+                "gender": "female",
+                "count": 70
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1208
+              },
+              {
+                "gender": "female",
+                "count": 220
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 439
+              },
+              {
+                "gender": "female",
+                "count": 78
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 414
+              },
+              {
+                "gender": "female",
+                "count": 81
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 89
+              },
+              {
+                "gender": "female",
+                "count": 34
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 730
+              },
+              {
+                "gender": "female",
+                "count": 170
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 685
+              },
+              {
+                "gender": "female",
+                "count": 93
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 445
+              },
+              {
+                "gender": "female",
+                "count": 87
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 470
+              },
+              {
+                "gender": "female",
+                "count": 96
+              }
+            ]
           }
         ]
       },
       {
-        "position": "leadership",
+        "race": "asian",
         "data": [
           {
-            "gender": "all",
-            "race": "all",
-            "count": 12
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 21
+              },
+              {
+                "gender": "female",
+                "count": 10
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "white",
-            "count": 7
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 90
+              },
+              {
+                "gender": "female",
+                "count": 33
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "asian",
-            "count": 1
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 614
+              },
+              {
+                "gender": "female",
+                "count": 195
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "black",
-            "count": 0
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 12
+              },
+              {
+                "gender": "female",
+                "count": 7
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "latinx",
-            "count": 0
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 247
+              },
+              {
+                "gender": "female",
+                "count": 120
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "white",
-            "count": 4
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 45
+              },
+              {
+                "gender": "female",
+                "count": 17
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "asian",
-            "count": 0
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 399
+              },
+              {
+                "gender": "female",
+                "count": 160
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "black",
-            "count": 0
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 14
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "latinx",
-            "count": 0
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 334
+              },
+              {
+                "gender": "female",
+                "count": 118
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 116
+              },
+              {
+                "gender": "female",
+                "count": 44
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 665
+              },
+              {
+                "gender": "female",
+                "count": 206
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 139
+              },
+              {
+                "gender": "female",
+                "count": 43
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 358
+              },
+              {
+                "gender": "female",
+                "count": 185
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 22
+              },
+              {
+                "gender": "female",
+                "count": 16
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 307
+              },
+              {
+                "gender": "female",
+                "count": 118
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 322
+              },
+              {
+                "gender": "female",
+                "count": 110
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 577
+              },
+              {
+                "gender": "female",
+                "count": 251
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 261
+              },
+              {
+                "gender": "female",
+                "count": 95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "race": "black",
+        "data": [
+          {
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 3
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 3
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 53
+              },
+              {
+                "gender": "female",
+                "count": 14
+              }
+            ]
+          },
+          {
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 10
+              },
+              {
+                "gender": "female",
+                "count": 11
+              }
+            ]
+          },
+          {
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 8
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 31
+              },
+              {
+                "gender": "female",
+                "count": 13
+              }
+            ]
+          },
+          {
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 30
+              },
+              {
+                "gender": "female",
+                "count": 11
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 12
+              },
+              {
+                "gender": "female",
+                "count": 6
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 58
+              },
+              {
+                "gender": "female",
+                "count": 14
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 18
+              },
+              {
+                "gender": "female",
+                "count": 11
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 15
+              },
+              {
+                "gender": "female",
+                "count": 9
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 8
+              },
+              {
+                "gender": "female",
+                "count": 6
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 33
+              },
+              {
+                "gender": "female",
+                "count": 15
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 22
+              },
+              {
+                "gender": "female",
+                "count": 6
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 21
+              },
+              {
+                "gender": "female",
+                "count": 9
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 16
+              },
+              {
+                "gender": "female",
+                "count": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "race": "latinx",
+        "data": [
+          {
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 9
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 15
+              },
+              {
+                "gender": "female",
+                "count": 5
+              }
+            ]
+          },
+          {
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 159
+              },
+              {
+                "gender": "female",
+                "count": 30
+              }
+            ]
+          },
+          {
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 4
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 57
+              },
+              {
+                "gender": "female",
+                "count": 20
+              }
+            ]
+          },
+          {
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 9
+              },
+              {
+                "gender": "female",
+                "count": 4
+              }
+            ]
+          },
+          {
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 70
+              },
+              {
+                "gender": "female",
+                "count": 18
+              }
+            ]
+          },
+          {
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 9
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 89
+              },
+              {
+                "gender": "female",
+                "count": 24
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 34
+              },
+              {
+                "gender": "female",
+                "count": 12
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 153
+              },
+              {
+                "gender": "female",
+                "count": 28
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 43
+              },
+              {
+                "gender": "female",
+                "count": 16
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 74
+              },
+              {
+                "gender": "female",
+                "count": 11
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 12
+              },
+              {
+                "gender": "female",
+                "count": 4
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 82
+              },
+              {
+                "gender": "female",
+                "count": 22
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 79
+              },
+              {
+                "gender": "female",
+                "count": 6
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 78
+              },
+              {
+                "gender": "female",
+                "count": 12
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 30
+              },
+              {
+                "gender": "female",
+                "count": 8
+              }
+            ]
           }
         ]
       }
     ]
   },
   {
-    "sector": "analytics",
+    "position": "leadership",
     "data": [
       {
-        "position": "all",
+        "race": "all",
         "data": [
           {
-            "gender": "all",
-            "race": "all",
-            "count": 8935
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "all",
+                "count": 22
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "all",
-            "count": 6132
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "all",
+                "count": 12
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "white",
-            "count": 3863
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "all",
+                "count": 404
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "asian",
-            "count": 1282
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "all",
+                "count": 7
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "black",
-            "count": 151
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "all",
+                "count": 197
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "latinx",
-            "count": 353
+            "sector": "education",
+            "data": [
+              {
+                "gender": "all",
+                "count": 39
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "other",
-            "count": 483
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "all",
+                "count": 139
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "all",
-            "count": 2803
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "all",
+                "count": 20
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "white",
-            "count": 1546
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "all",
+                "count": 99
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "asian",
-            "count": 709
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "all",
+                "count": 122
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "black",
-            "count": 73
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "all",
+                "count": 287
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "latinx",
-            "count": 210
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "all",
+                "count": 119
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "other",
-            "count": 265
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "all",
+                "count": 153
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "all",
+                "count": 79
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "all",
+                "count": 155
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "all",
+                "count": 239
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "all",
+                "count": 137
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "all",
+                "count": 86
+              }
+            ]
           }
         ]
       },
       {
-        "position": "technical",
+        "race": "white",
         "data": [
           {
-            "gender": "all",
-            "race": "all",
-            "count": 2661
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 16
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "white",
-            "count": 1350
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 7
+              },
+              {
+                "gender": "female",
+                "count": 4
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "asian",
-            "count": 614
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 248
+              },
+              {
+                "gender": "female",
+                "count": 60
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "black",
-            "count": 53
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 5
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "latinx",
-            "count": 159
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 98
+              },
+              {
+                "gender": "female",
+                "count": 53
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "white",
-            "count": 246
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 21
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "asian",
-            "count": 195
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 79
+              },
+              {
+                "gender": "female",
+                "count": 20
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "black",
-            "count": 14
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 15
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "latinx",
-            "count": 30
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 68
+              },
+              {
+                "gender": "female",
+                "count": 13
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 56
+              },
+              {
+                "gender": "female",
+                "count": 32
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 158
+              },
+              {
+                "gender": "female",
+                "count": 34
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 68
+              },
+              {
+                "gender": "female",
+                "count": 20
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 80
+              },
+              {
+                "gender": "female",
+                "count": 22
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 39
+              },
+              {
+                "gender": "female",
+                "count": 24
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 86
+              },
+              {
+                "gender": "female",
+                "count": 24
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 161
+              },
+              {
+                "gender": "female",
+                "count": 30
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 68
+              },
+              {
+                "gender": "female",
+                "count": 29
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 46
+              },
+              {
+                "gender": "female",
+                "count": 20
+              }
+            ]
           }
         ]
       },
       {
-        "position": "leadership",
+        "race": "asian",
         "data": [
           {
-            "gender": "all",
-            "race": "all",
-            "count": 404
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 3
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "white",
-            "count": 248
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "asian",
-            "count": 57
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 57
+              },
+              {
+                "gender": "female",
+                "count": 18
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "black",
-            "count": 3
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 0
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "latinx",
-            "count": 14
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 25
+              },
+              {
+                "gender": "female",
+                "count": 8
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "white",
-            "count": 60
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 11
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "asian",
-            "count": 18
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 22
+              },
+              {
+                "gender": "female",
+                "count": 8
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "black",
-            "count": 1
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "latinx",
-            "count": 3
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "blockchain",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 238
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 7
+              },
+              {
+                "gender": "female",
+                "count": 7
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "all",
-            "count": 171
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 16
+              },
+              {
+                "gender": "female",
+                "count": 10
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "white",
-            "count": 111
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 69
+              },
+              {
+                "gender": "female",
+                "count": 8
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "asian",
-            "count": 27
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 14
+              },
+              {
+                "gender": "female",
+                "count": 7
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "black",
-            "count": 10
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 28
+              },
+              {
+                "gender": "female",
+                "count": 7
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "latinx",
-            "count": 19
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 8
+              },
+              {
+                "gender": "female",
+                "count": 3
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "other",
-            "count": 4
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 28
+              },
+              {
+                "gender": "female",
+                "count": 7
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "all",
-            "count": 67
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 30
+              },
+              {
+                "gender": "female",
+                "count": 6
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "white",
-            "count": 34
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 16
+              },
+              {
+                "gender": "female",
+                "count": 10
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "asian",
-            "count": 21
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 3
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 8
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 1
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 65
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 39
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 12
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 2
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 4
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 1
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 7
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 0
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 7
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 5
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 0
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 2
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "ecommerce",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 8535
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 3444
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 2033
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 698
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 200
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 386
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 127
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 5091
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 3462
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 715
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 224
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 470
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 220
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 13
+              },
+              {
+                "gender": "female",
+                "count": 4
+              }
+            ]
           }
         ]
       },
       {
-        "position": "technical",
+        "race": "black",
         "data": [
           {
-            "gender": "all",
-            "race": "all",
-            "count": 1042
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 0
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "white",
-            "count": 434
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 0
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "asian",
-            "count": 247
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 3
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "black",
-            "count": 10
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 0
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           },
           {
-            "gender": "male",
-            "race": "latinx",
-            "count": 57
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "white",
-            "count": 143
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 0
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "asian",
-            "count": 120
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "black",
-            "count": 11
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           },
           {
-            "gender": "female",
-            "race": "latinx",
-            "count": 20
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 0
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 5
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 4
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 3
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 5
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           }
         ]
       },
       {
-        "position": "leadership",
+        "race": "latinx",
         "data": [
           {
-            "gender": "all",
-            "race": "all",
-            "count": 197
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 98
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 25
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 2
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 7
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 53
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 8
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 2
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 2
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "education",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 745
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 461
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 268
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 101
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 24
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 23
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 45
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 284
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 162
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 76
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 9
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 15
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 22
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 225
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 105
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 45
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 8
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 9
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 35
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 17
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 2
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 4
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 39
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 21
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 11
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 3
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 2
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 2
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "financial",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 5639
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 3602
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 2243
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 794
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 107
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 223
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 235
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 2037
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 1158
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 540
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 86
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 129
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 124
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 1733
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 905
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 399
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 31
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 70
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 137
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 160
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 13
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 18
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 139
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 79
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 22
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 1
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 7
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 20
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 8
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 2
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "gaming",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 405
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 327
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 259
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 26
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 5
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 22
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 15
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 78
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 64
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 6
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 6
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 2
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 97
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 66
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 14
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 2
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 9
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 4
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 2
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 0
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 20
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 15
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 2
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 1
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 2
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "hardware",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 4779
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 3351
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 1992
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 614
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 105
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 234
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 406
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 1428
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 749
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 351
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 64
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 99
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 165
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 1643
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 922
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 334
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 30
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 89
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 115
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 118
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 11
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 24
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 99
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 68
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 7
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 3
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 13
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 7
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 1
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "healthcare",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 2455
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 1168
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 682
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 289
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 49
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 99
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 49
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 1287
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 759
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 301
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 66
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 107
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 54
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 534
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 240
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 116
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 12
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 34
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 70
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 44
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 6
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 12
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 122
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 56
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 16
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 1
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 7
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 32
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 10
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "infrastructure",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 6881
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 5066
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 3065
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 1281
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 143
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 370
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 207
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 1815
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 985
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 562
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 50
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 161
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 57
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 2552
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 1208
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 665
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 58
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 153
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 220
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 206
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 14
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 28
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 287
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 158
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 69
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 5
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 10
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 34
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 8
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 1
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 2
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "marketing",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 3068
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 1956
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 1298
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 323
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 57
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 132
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 146
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 1112
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 685
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 205
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 38
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 80
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 104
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 787
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 439
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 139
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 18
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 43
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 78
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 43
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 11
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 16
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 119
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 68
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 14
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 2
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 7
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 20
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 7
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 1
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "marketplace",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 5227
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 2844
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 1687
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 718
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 115
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 265
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 59
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 2383
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 1494
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 566
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 102
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 201
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 20
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 1147
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 414
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 358
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 15
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 74
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 81
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 185
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 9
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 11
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 153
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 80
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 28
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 4
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 8
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 22
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 7
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 2
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 2
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "media",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 1835
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 860
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 574
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 109
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 62
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 82
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 33
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 975
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 635
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 136
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 80
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 94
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 30
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 191
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 89
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 22
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 8
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 12
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 34
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 16
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 6
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 4
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 79
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 39
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 8
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 2
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 2
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 24
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 3
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 1
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "productivity",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 5461
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 3423
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 1973
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 765
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 91
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 237
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 357
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 2038
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 1148
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 440
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 72
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 152
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 226
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 1477
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 730
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 307
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 33
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 82
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 170
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 118
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 15
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 22
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 155
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 86
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 28
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 1
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 7
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 24
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 7
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 1
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 1
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "security",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 4025
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 2950
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 2033
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 575
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 80
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 174
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 88
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 1075
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 690
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 237
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 31
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 93
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 24
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 1323
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 685
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 322
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 22
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 79
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 93
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 110
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 6
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 6
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 239
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 161
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 30
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 3
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 8
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 30
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 6
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 1
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "social",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 5796
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 3431
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 1372
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 883
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 97
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 250
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 829
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 2365
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 1043
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 553
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 71
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 163
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 535
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 1480
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 445
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 577
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 21
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 78
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 87
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 251
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 9
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 12
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 137
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 68
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 16
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 5
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 7
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 29
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 10
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 2
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "sector": "storage",
-    "data": [
-      {
-        "position": "all",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 3172
-          },
-          {
-            "gender": "male",
-            "race": "all",
-            "count": 1979
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 1190
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 468
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 74
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 96
-          },
-          {
-            "gender": "male",
-            "race": "other",
-            "count": 151
-          },
-          {
-            "gender": "female",
-            "race": "all",
-            "count": 1193
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 672
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 333
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 35
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 56
-          },
-          {
-            "gender": "female",
-            "race": "other",
-            "count": 97
-          }
-        ]
-      },
-      {
-        "position": "technical",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 980
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 470
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 261
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 16
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 30
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 96
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 95
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 4
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 8
-          }
-        ]
-      },
-      {
-        "position": "leadership",
-        "data": [
-          {
-            "gender": "all",
-            "race": "all",
-            "count": 86
-          },
-          {
-            "gender": "male",
-            "race": "white",
-            "count": 46
-          },
-          {
-            "gender": "male",
-            "race": "asian",
-            "count": 13
-          },
-          {
-            "gender": "male",
-            "race": "black",
-            "count": 1
-          },
-          {
-            "gender": "male",
-            "race": "latinx",
-            "count": 2
-          },
-          {
-            "gender": "female",
-            "race": "white",
-            "count": 20
-          },
-          {
-            "gender": "female",
-            "race": "asian",
-            "count": 4
-          },
-          {
-            "gender": "female",
-            "race": "black",
-            "count": 0
-          },
-          {
-            "gender": "female",
-            "race": "latinx",
-            "count": 0
+            "sector": "aerospace?",
+            "data": [
+              {
+                "gender": "male",
+                "count": 1
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "AI",
+            "data": [
+              {
+                "gender": "male",
+                "count": 0
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "analytics",
+            "data": [
+              {
+                "gender": "male",
+                "count": 14
+              },
+              {
+                "gender": "female",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "sector": "blockchain",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "ecommerce",
+            "data": [
+              {
+                "gender": "male",
+                "count": 7
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "sector": "education",
+            "data": [
+              {
+                "gender": "male",
+                "count": 3
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "financial",
+            "data": [
+              {
+                "gender": "male",
+                "count": 7
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "sector": "gaming",
+            "data": [
+              {
+                "gender": "male",
+                "count": 0
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "hardware",
+            "data": [
+              {
+                "gender": "male",
+                "count": 3
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "sector": "healthcare",
+            "data": [
+              {
+                "gender": "male",
+                "count": 7
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "infrastructure",
+            "data": [
+              {
+                "gender": "male",
+                "count": 10
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "sector": "marketing",
+            "data": [
+              {
+                "gender": "male",
+                "count": 7
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
+          },
+          {
+            "sector": "marketplace",
+            "data": [
+              {
+                "gender": "male",
+                "count": 8
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "sector": "media",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "sector": "productivity",
+            "data": [
+              {
+                "gender": "male",
+                "count": 7
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "sector": "security",
+            "data": [
+              {
+                "gender": "male",
+                "count": 8
+              },
+              {
+                "gender": "female",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "sector": "social",
+            "data": [
+              {
+                "gender": "male",
+                "count": 7
+              },
+              {
+                "gender": "female",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "sector": "storage",
+            "data": [
+              {
+                "gender": "male",
+                "count": 2
+              },
+              {
+                "gender": "female",
+                "count": 0
+              }
+            ]
           }
         ]
       }

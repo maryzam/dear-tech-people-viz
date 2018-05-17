@@ -42,10 +42,12 @@ byGender <- overall %>%
   arrange(sector, position)
 
 result <- overall %>%
-  group_by(sector, position) %>%
+  group_by(race, position, sector) %>%
     nest() %>%
-  group_by(sector) %>% 
+  group_by(position, race) %>% 
     nest() %>%
+  group_by(position) %>% 
+  nest() %>%
   toJSON(pretty = TRUE) %>%
   write_lines("../data/statsBySectorAndGender.json")
 

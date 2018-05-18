@@ -19,10 +19,10 @@ const App = (props) => (
 			<Header />
 			<div className="main"
 				 style={ { border: "1px solid black", padding: "20px" }} >
-				 <TopCompanies {...props} />
 				 <OverallByGenderStats {...props} />
 				 <OverallBySectorStats {...props} />
 				 <OverallByRaceStats {...props} />
+				 <TopCompanies {...props} />
 			</div>
 			<Footer />
 		</div>

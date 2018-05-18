@@ -30,25 +30,22 @@ function getModeOptions(mode) {
 	return opts;
 }
 
-const data = Provider.getOverallByGender(600); // todo depends on element's size?
+const pointsGrid = { x: 30, y: 20 };
+
+const data = Provider.getOverallByGender(pointsGrid.x * pointsGrid.y);
 const roles = Provider.getRoles();
 
 const scaleColor = d3.scaleOrdinal()
 					.domain(["male", "female"])
 					.range(["steelblue", "tomato"]);
 
-const scaleOpacity = d3.scaleBand()
+const scaleOpacity = d3.scalePoint()
 					.domain(roles)
 					.range([0.3, 1]);
-
-const scaleStroke = d3.scaleBand()
-						.domain(roles)
-						.range([6, 0]);
 
 const baseColor = "#999";
 const zeroOpacity = 1e-6;
 const baseOpacity = scaleOpacity("other");
-const baseStroke = `${scaleStroke("other")}px`;
 
 class OverallByGenderViz extends React.PureComponent { 
 
@@ -57,6 +54,9 @@ class OverallByGenderViz extends React.PureComponent {
 
 		this.state = getModeOptions(props.mode);
 		this.setVizRef = (element) => { this.viz = element; };
+		this.scaleRadius = d3.scalePoint()
+						.domain(roles)
+						.range([4, 6]);
 	}
 	
 	static getDerivedStateFromProps(nextProps, prevState) {
@@ -99,14 +99,18 @@ class OverallByGenderViz extends React.PureComponent {
 			.style("fill", showGenders ? 
 					(d) => scaleColor(d.gender) : 
 					baseColor )
-			.style("strokeWidth", showRoles ? 
-					(d) => `${scaleStroke(d.type)}px` : 
-					baseStroke );
+			.attr("r", showRoles ?
+					((d) => (`${this.scaleRadius(d.type)}px`)) : 
+					this.scaleRadius("other") );
 	}
 
 	render() {
 		const { width, height } = this.props;
-		const pointRadius = Math.min(width / 30, height / 20) * 0.5;
+		const xStep = width / pointsGrid.x / 2;
+		const yStep = height / pointsGrid.y / 2;
+		const maxRadius = Math.min(xStep, yStep) * 0.9;
+		const minRadius = maxRadius * 0.8;
+		this.scaleRadius.range([minRadius, maxRadius]);
 
 		return (
 			<svg ref={ this.setVizRef }
@@ -122,13 +126,12 @@ class OverallByGenderViz extends React.PureComponent {
 								key={d.id}
 								item={d.id}
 								className="point"
-								cx={ pointRadius * (2 * x + 1 )}
-								cy={ pointRadius * (2 * y + 1 )}
-								r={ pointRadius }
+								cx={ xStep * (2 * x + 1 )}
+								cy={ yStep * (2 * y + 1 )}
+								r={ minRadius }
 								style= {{ 
 									fill: baseColor, 
-									fillOpacity: zeroOpacity, 
-									strokeWidth: baseStroke
+									fillOpacity: zeroOpacity 
 								}}
 							/>)
 					})
@@ -146,7 +149,7 @@ OverallByGenderViz.propTypes = {
 };
 
 OverallByGenderViz.defaultProps = {
-	mode: "hidden",
+	mode: "roles",
 	animDuration: 1000
 };
 

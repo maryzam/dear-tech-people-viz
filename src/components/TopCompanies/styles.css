@@ -1,0 +1,18 @@
+
+.top-companies { }
+
+.top-companies .link {
+	stroke: #777;
+	stroke-width: 3px;
+	stroke-linecap: round;
+	stroke-dasharray: 1 5;
+}
+
+.top-companies .header rect {
+	fill: white;
+	stroke: black;
+}
+
+.top-companies .header text {
+	fill: black;
+}

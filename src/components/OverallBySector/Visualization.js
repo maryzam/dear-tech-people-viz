@@ -18,7 +18,7 @@ class OverallBySectorStats extends React.PureComponent {
 
 		this.setVizRef = (element) => { this.viz = element; };
 
-		this.scaleSectors = d3.scaleBand().domain(sectors).round(true);
+		this.scaleSectors = d3.scalePoint().domain(sectors).round(true);
 		this.scaleFreq = d3.scaleLinear();
 		this.scaleTotal = d3.scaleLinear();
 	}
@@ -92,7 +92,7 @@ class OverallBySectorStats extends React.PureComponent {
 		this.scaleSectors.range([0, vizHeight]);
 		this.scaleFreq.range([0, vizWidth]);
 
-		const maxRadius = this.scaleSectors.bandwidth() / 2;
+		const maxRadius = this.scaleSectors.step() / 2;
 		const maxCount = d3.max(data[race], (d) => (Math.max(d[role].male, d[role].female)));
 		this.scaleTotal.range([3, maxRadius]).domain([0, maxCount]);
 	}

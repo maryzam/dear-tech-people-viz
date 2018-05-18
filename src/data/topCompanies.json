@@ -1,0 +1,241 @@
+[
+  {
+    "name": "Clover Health",
+    "sector": "healthcare",
+    "ranking": {
+      "leadership": 1,
+      "overall": 1,
+      "technical": 2
+    },
+    "employees": {
+      "overall": 337,
+      "technical": 68,
+      "leadership": 14
+    }
+  },
+  {
+    "name": "Quora",
+    "sector": "social",
+    "ranking": {
+      "leadership": 2
+    },
+    "employees": {
+      "overall": 236,
+      "technical": 98,
+      "leadership": 9
+    }
+  },
+  {
+    "name": "StitchFix",
+    "sector": "ecommerce",
+    "ranking": {
+      "leadership": 3,
+      "overall": 5
+    },
+    "employees": {
+      "overall": 2094,
+      "technical": 196,
+      "leadership": 28
+    }
+  },
+  {
+    "name": "Airbnb",
+    "sector": "marketplace",
+    "ranking": {
+      "leadership": 4
+    },
+    "employees": {
+      "overall": 3181,
+      "technical": 822,
+      "leadership": 65
+    }
+  },
+  {
+    "name": "Pinterest",
+    "sector": "social",
+    "ranking": {
+      "leadership": 5,
+      "overall": 8,
+      "technical": 10
+    },
+    "employees": {
+      "overall": 1485,
+      "technical": 425,
+      "leadership": 33
+    }
+  },
+  {
+    "name": "Rent the Runway",
+    "sector": "ecommerce",
+    "ranking": {
+      "leadership": 6,
+      "overall": 4
+    },
+    "employees": {
+      "overall": 430,
+      "technical": 83,
+      "leadership": 15
+    }
+  },
+  {
+    "name": "Reddit",
+    "sector": "social",
+    "ranking": {
+      "leadership": 7
+    },
+    "employees": {
+      "overall": 298,
+      "technical": 111,
+      "leadership": 9
+    }
+  },
+  {
+    "name": "Glossier",
+    "sector": "ecommerce",
+    "ranking": {
+      "leadership": 8,
+      "overall": 6
+    },
+    "employees": {
+      "overall": 271,
+      "technical": 22,
+      "leadership": 13
+    }
+  },
+  {
+    "name": "SoFi",
+    "sector": "financial",
+    "ranking": {
+      "leadership": 9
+    },
+    "employees": {
+      "overall": 887,
+      "technical": 228,
+      "leadership": 36
+    }
+  },
+  {
+    "name": "Credit Karma",
+    "sector": "financial",
+    "ranking": {
+      "leadership": 10
+    },
+    "employees": {
+      "overall": 660,
+      "technical": 326,
+      "leadership": 17
+    }
+  },
+  {
+    "name": "Blue Apron",
+    "sector": "ecommerce",
+    "ranking": {
+      "overall": 2,
+      "technical": 5
+    },
+    "employees": {
+      "overall": 819,
+      "technical": 109,
+      "leadership": 13
+    }
+  },
+  {
+    "name": "Patreon",
+    "sector": "marketplace",
+    "ranking": {
+      "overall": 3,
+      "technical": 6
+    },
+    "employees": {
+      "overall": 122,
+      "technical": 34,
+      "leadership": 11
+    }
+  },
+  {
+    "name": "Chariot",
+    "sector": "marketplace",
+    "ranking": {
+      "overall": 7,
+      "technical": 3
+    },
+    "employees": {
+      "overall": 134,
+      "technical": 12,
+      "leadership": 8
+    }
+  },
+  {
+    "name": "BuzzFeed",
+    "sector": "media",
+    "ranking": {
+      "overall": 9
+    },
+    "employees": {
+      "overall": 1507,
+      "technical": 137,
+      "leadership": 51
+    }
+  },
+  {
+    "name": "Collective Health",
+    "sector": "healthcare",
+    "ranking": {
+      "overall": 10,
+      "technical": 8
+    },
+    "employees": {
+      "overall": 320,
+      "technical": 71,
+      "leadership": 24
+    }
+  },
+  {
+    "name": "Everlane",
+    "sector": "ecommerce",
+    "ranking": {
+      "technical": 1
+    },
+    "employees": {
+      "overall": 166,
+      "technical": 13,
+      "leadership": 3
+    }
+  },
+  {
+    "name": "Houzz",
+    "sector": "ecommerce",
+    "ranking": {
+      "technical": 4
+    },
+    "employees": {
+      "overall": 1407,
+      "technical": 103,
+      "leadership": 10
+    }
+  },
+  {
+    "name": "Grail",
+    "sector": "healthcare",
+    "ranking": {
+      "technical": 7
+    },
+    "employees": {
+      "overall": 243,
+      "technical": 52,
+      "leadership": 5
+    }
+  },
+  {
+    "name": "New Relic",
+    "sector": "analytics",
+    "ranking": {
+      "technical": 9
+    },
+    "employees": {
+      "overall": 1048,
+      "technical": 373,
+      "leadership": 52
+    }
+  }
+]

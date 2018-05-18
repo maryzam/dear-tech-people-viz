@@ -2,6 +2,7 @@
 import overallByGender from "../data/overallByGender.json";
 import overallByRaceGender from "../data/statsByRaceAndGender.json";
 import overallBySectors from "../data/statsBySectorAndGender.json";
+import topCompanies from "../data/topCompanies.json";
 
 const races = [ "white", "black", "asian", "latinx" ]
 const roles = [ "other", "technical", "leadership"];
@@ -80,11 +81,16 @@ function getOverallBySectors() {
 	return overallBySectors;
 }
 
+function getTopCompanies() {
+	return topCompanies;
+}
+
 export default {
 	getRoles,
 	getRaces,
 	getSectors,
 	getOverallByRaceAndGender,
 	getOverallByGender,
-	getOverallBySectors
+	getOverallBySectors,
+	getTopCompanies
 };

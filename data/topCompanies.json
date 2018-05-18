@@ -1,0 +1,250 @@
+[
+  {
+    "leadership_ranking": [
+      {
+        "company_name": "Clover Health",
+        "sector_1": "healthcare",
+        "ranking": 1,
+        "total_employees": 337,
+        "technical_total": 68,
+        "leadership_total": 14
+      },
+      {
+        "company_name": "Quora",
+        "sector_1": "social",
+        "ranking": 2,
+        "total_employees": 236,
+        "technical_total": 98,
+        "leadership_total": 9
+      },
+      {
+        "company_name": "StitchFix",
+        "sector_1": "ecommerce",
+        "ranking": 3,
+        "total_employees": 2094,
+        "technical_total": 196,
+        "leadership_total": 28
+      },
+      {
+        "company_name": "Airbnb",
+        "sector_1": "marketplace",
+        "ranking": 4,
+        "total_employees": 3181,
+        "technical_total": 822,
+        "leadership_total": 65
+      },
+      {
+        "company_name": "Pinterest",
+        "sector_1": "social",
+        "ranking": 5,
+        "total_employees": 1485,
+        "technical_total": 425,
+        "leadership_total": 33
+      },
+      {
+        "company_name": "Rent the Runway",
+        "sector_1": "ecommerce",
+        "ranking": 6,
+        "total_employees": 430,
+        "technical_total": 83,
+        "leadership_total": 15
+      },
+      {
+        "company_name": "Reddit",
+        "sector_1": "social",
+        "ranking": 7,
+        "total_employees": 298,
+        "technical_total": 111,
+        "leadership_total": 9
+      },
+      {
+        "company_name": "Glossier",
+        "sector_1": "ecommerce",
+        "ranking": 8,
+        "total_employees": 271,
+        "technical_total": 22,
+        "leadership_total": 13
+      },
+      {
+        "company_name": "SoFi",
+        "sector_1": "financial",
+        "ranking": 9,
+        "total_employees": 887,
+        "technical_total": 228,
+        "leadership_total": 36
+      },
+      {
+        "company_name": "Credit Karma",
+        "sector_1": "financial",
+        "ranking": 10,
+        "total_employees": 660,
+        "technical_total": 326,
+        "leadership_total": 17
+      }
+    ],
+    "overall_ranking": [
+      {
+        "company_name": "Clover Health",
+        "sector_1": "healthcare",
+        "ranking": 1,
+        "total_employees": 337,
+        "technical_total": 68,
+        "leadership_total": 14
+      },
+      {
+        "company_name": "Blue Apron",
+        "sector_1": "ecommerce",
+        "ranking": 2,
+        "total_employees": 819,
+        "technical_total": 109,
+        "leadership_total": 13
+      },
+      {
+        "company_name": "Patreon",
+        "sector_1": "marketplace",
+        "ranking": 3,
+        "total_employees": 122,
+        "technical_total": 34,
+        "leadership_total": 11
+      },
+      {
+        "company_name": "Rent the Runway",
+        "sector_1": "ecommerce",
+        "ranking": 4,
+        "total_employees": 430,
+        "technical_total": 83,
+        "leadership_total": 15
+      },
+      {
+        "company_name": "StitchFix",
+        "sector_1": "ecommerce",
+        "ranking": 5,
+        "total_employees": 2094,
+        "technical_total": 196,
+        "leadership_total": 28
+      },
+      {
+        "company_name": "Glossier",
+        "sector_1": "ecommerce",
+        "ranking": 6,
+        "total_employees": 271,
+        "technical_total": 22,
+        "leadership_total": 13
+      },
+      {
+        "company_name": "Chariot",
+        "sector_1": "marketplace",
+        "ranking": 7,
+        "total_employees": 134,
+        "technical_total": 12,
+        "leadership_total": 8
+      },
+      {
+        "company_name": "Pinterest",
+        "sector_1": "social",
+        "ranking": 8,
+        "total_employees": 1485,
+        "technical_total": 425,
+        "leadership_total": 33
+      },
+      {
+        "company_name": "BuzzFeed",
+        "sector_1": "media",
+        "ranking": 9,
+        "total_employees": 1507,
+        "technical_total": 137,
+        "leadership_total": 51
+      },
+      {
+        "company_name": "Collective Health",
+        "sector_1": "healthcare",
+        "ranking": 10,
+        "total_employees": 320,
+        "technical_total": 71,
+        "leadership_total": 24
+      }
+    ],
+    "technical_ranking": [
+      {
+        "company_name": "Everlane",
+        "sector_1": "ecommerce",
+        "ranking": 1,
+        "total_employees": 166,
+        "technical_total": 13,
+        "leadership_total": 3
+      },
+      {
+        "company_name": "Clover Health",
+        "sector_1": "healthcare",
+        "ranking": 2,
+        "total_employees": 337,
+        "technical_total": 68,
+        "leadership_total": 14
+      },
+      {
+        "company_name": "Chariot",
+        "sector_1": "marketplace",
+        "ranking": 3,
+        "total_employees": 134,
+        "technical_total": 12,
+        "leadership_total": 8
+      },
+      {
+        "company_name": "Houzz",
+        "sector_1": "ecommerce",
+        "ranking": 4,
+        "total_employees": 1407,
+        "technical_total": 103,
+        "leadership_total": 10
+      },
+      {
+        "company_name": "Blue Apron",
+        "sector_1": "ecommerce",
+        "ranking": 5,
+        "total_employees": 819,
+        "technical_total": 109,
+        "leadership_total": 13
+      },
+      {
+        "company_name": "Patreon",
+        "sector_1": "marketplace",
+        "ranking": 6,
+        "total_employees": 122,
+        "technical_total": 34,
+        "leadership_total": 11
+      },
+      {
+        "company_name": "Grail",
+        "sector_1": "healthcare",
+        "ranking": 7,
+        "total_employees": 243,
+        "technical_total": 52,
+        "leadership_total": 5
+      },
+      {
+        "company_name": "Collective Health",
+        "sector_1": "healthcare",
+        "ranking": 8,
+        "total_employees": 320,
+        "technical_total": 71,
+        "leadership_total": 24
+      },
+      {
+        "company_name": "New Relic",
+        "sector_1": "analytics",
+        "ranking": 9,
+        "total_employees": 1048,
+        "technical_total": 373,
+        "leadership_total": 52
+      },
+      {
+        "company_name": "Pinterest",
+        "sector_1": "social",
+        "ranking": 10,
+        "total_employees": 1485,
+        "technical_total": 425,
+        "leadership_total": 33
+      }
+    ]
+  }
+]

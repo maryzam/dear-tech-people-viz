@@ -5,9 +5,9 @@ import * as d3 from "d3";
 
 import Provider from "../../utils/dataProvider";
 
-const padding = { x : 50, y: 10 };
+const labelSize = { width: 100, height: 30 }
 
-const roles = ["overall", "technical", "leadership"];
+const roles = [ "technical", "overall", "leadership"];
 
 const data = Provider.getTopCompanies();
 const rankingRange = data.map((d) => (d.ranking.overall)).filter((d) => !!d);
@@ -23,18 +23,18 @@ class TopCompaniesViz extends React.PureComponent {
 		this.scaleRoles = d3.scalePoint()
 							.round(true)
 							.domain(roles)
-							.range([padding.x, width - padding.x]);
+							.range([0, width - labelSize.width]);
 
 		this.scaleRanking = d3.scalePoint()
 							.round(true)
 							.domain(rankingRange)
-							.range([padding.y, height - padding.y]);
+							.range([0, height - labelSize.height]);
 	}
 
 	updateScales() {
 		const { width, height } = this.props;
-		this.scaleRoles.range([padding.x, width - padding.x]);
-		this.scaleRanking.range([padding.y, height - padding.y]);
+		this.scaleRoles.range([0, width - labelSize.width]);
+		this.scaleRanking.range([0, height - labelSize.height]);
 	}
 
 	render() {
@@ -42,49 +42,63 @@ class TopCompaniesViz extends React.PureComponent {
 		const { width, height } = this.props;
 
 		return (
+			<div>
 				<svg width={ width } height={ height }>
+
+
+					{
+						data.filter((d) => (d.ranking.technical && d.ranking.overall))
+							.map((d)=> (
+									<path key={`${d.name}_tech`} 
+										  d={ this.getLink(d, "technical", "overall") }
+										  style={{stroke: "black"}}/>
+								))
+					}
+					{
+						data.filter((d) => (d.ranking.overall && d.ranking.leadership))
+							.map((d)=> (
+									<path key={`${d.name}_lead`} 
+										  d={ this.getLink(d, "overall", "leadership") }
+										  style={{stroke: "black" }}/>
+								))
+					}
 					{
 						data.map((company) => {
 							const items = [];
 							for (let role in company.ranking) {
 								const ranking = company.ranking[role];
 								items.push((
-									<text 
+									<image 
 										key={`${company.name}_${role}`}
-										data-key={`${company.name}_${role}`}
+										href={`assets/images/${ company.name }.png`}
+										width={ labelSize.width } height={ labelSize.height }
 										transform={`translate(${this.scaleRoles(role)},${this.scaleRanking(ranking)})`}>
-										{company.name}
-									</text>)
+									</image>)
 								);
 							}
 							return items;
 						})
 					}
-					{
-						data.filter((d) => (d.ranking.overall && d.ranking.technical))
-							.map((d)=> (
-									<link key={`${d.name}_tech`} 
-										  d={ this.getLink(d, "overall", "technical") }
-										  style={{stroke: "black"}}/>
-								))
-					}
+
 				</svg>
+			</div>
 			);
 	}
 
 	getLink(company, fromRole, toRole) {
+	  const offset = labelSize.height / 2;
 	  const source = {
-	  	x: this.scaleRoles(fromRole),
-	  	y: this.scaleRanking(company.ranking[fromRole])
+	  	x: this.scaleRoles(fromRole) + labelSize.width,
+	  	y: this.scaleRanking(company.ranking[fromRole]) + offset
 	  };
 	  const target = {
 	  	x: this.scaleRoles(toRole),
-	  	y: this.scaleRanking(company.ranking[toRole])
+	  	y: this.scaleRanking(company.ranking[toRole]) + offset
 	  };
-	  return "M" + source.y + "," + source.x
-	      + "C" + (source.y + target.y) / 2 + "," + source.x
-	      + " " + (source.y + target.y) / 2 + "," + target.x
-	      + " " + target.y + "," + target.x;
+	  return "M" + source.x + "," + source.y
+	      + "C" + (source.x + target.x) / 2 + "," + source.y
+	      + " " + (source.x + target.x) / 2 + "," + target.y
+	      + " " + target.x + "," + target.y;
 	}
 }
 

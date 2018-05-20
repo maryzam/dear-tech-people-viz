@@ -1,10 +1,8 @@
 import React from 'react';
-import PropTypes from "prop-types"; 
-
 import * as d3 from "d3";
+import { throttle } from 'lodash'; 
 
 import Provider from "../../utils/dataProvider";
-
 
 const labelSize = { width: 100, height: 30, offset: 10 }
 
@@ -16,27 +14,18 @@ rankingRange.sort((a, b) => (a - b));
 
 class TopCompaniesViz extends React.PureComponent {
 
-	constructor(props) {
-		super(props);
+	state = {
+		width: 400,
+		height: 200
+	};
 
-		const { width, height } = this.props;
+	setVizRef = (element) => { this.viz = element; }
 
-		this.scaleRoles = d3.scalePoint()
-							.round(true)
-							.domain(roles)
-							.range([0, width - labelSize.width]);
-
-		this.scaleRanking = d3.scalePoint()
-							.round(true)
-							.domain(rankingRange)
-							.range([
-								(labelSize.height + labelSize.offset), 
-								(height - labelSize.height)
-							]);
-	}
+	scaleRoles = d3.scalePoint().domain(roles).round(true)
+	scaleRanking = d3.scalePoint().domain(rankingRange).round(true)
 
 	updateScales() {
-		const { width, height } = this.props;
+		const { width, height } = this.state;
 		this.scaleRoles.range([0, width - labelSize.width]);
 		this.scaleRanking.range([
 								(labelSize.height + labelSize.offset), 
@@ -44,17 +33,41 @@ class TopCompaniesViz extends React.PureComponent {
 							]);
 	}
 
+	updateSize = () => { 
+		const size = this.container.node().getBoundingClientRect();
+		this.setState({ 
+			width: size.width, 
+			height: Math.max(size.height, 10 * labelSize.height) 
+		});
+	}
+
+	onResize = throttle(this.updateSize, 200, { trailing: true });
+
+	componentDidMount() {
+		this.container = d3.select(this.viz);
+		this.updateSize();
+		window.addEventListener('resize', this.onResize);
+	}
+
+	componentWillUnmount() {
+		this.onResize.cancel();
+	    window.removeEventListener('resize', this.onResize);
+	}
+
 	render() {
 
-		const { width, height } = this.props;
+		this.updateScales();
 
+		const { width, height } = this.state;
 		return (
-			<svg className="top-companies" width={ width } height={ height } >
-				{ this.getHeader() }
-				{ this.getAllLinks("technical", "overall") }
-				{ this.getAllLinks("overall", "leadership") }
-				{ this.getAllLabels() }
-			</svg>
+			<section className="viz" ref={ this.setVizRef }>
+				<svg width={ width } height={ height } >
+					{ this.getHeader() }
+					{ this.getAllLinks("technical", "overall") }
+					{ this.getAllLinks("overall", "leadership") }
+					{ this.getAllLabels() }
+				</svg>
+			</section>
 		);
 	}
 
@@ -65,7 +78,7 @@ class TopCompaniesViz extends React.PureComponent {
 			<g className="header">
 				{
 					roles.map((role) => (
-						<g key={ role }
+						<g key={ role } className="label"
 							transform={`translate(${this.scaleRoles(role)},0)`}>
 							<rect width={labelSize.width} height={labelSize.height} />
 							<text dx={dx} dy={dy}>{ role }</text>
@@ -132,15 +145,5 @@ class TopCompaniesViz extends React.PureComponent {
 	  		${target.x} ${target.y}`;
 	}
 }
-
-TopCompaniesViz.propTypes = {
-	width: PropTypes.number.isRequired,
-	height: PropTypes.number.isRequired,
-	animDuration: PropTypes.number
-};
-
-TopCompaniesViz.defaultProps = {
-	animDuration: 1000
-};
 
 export default TopCompaniesViz;

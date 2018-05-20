@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#VizForSocialGood :: Dear Tech People</title>
+    <style type="text/css">
+    	* {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+
+		html, body {
+			width: 100%;
+			height: 100vh;
+		}
+
+		.container {
+			display: flex;
+    		flex-direction: column;
+    
+    		justify-content: flex-start; /* align items in Main Axis */
+    		align-items: stretch; /* align items in Cross Axis */
+    		align-content: stretch;
+
+			min-height: 100vh;
+			min-width: 480px;
+			max-width: 960px;
+			margin: 0 auto;
+			border: 1px solid black;
+		}
+
+		main {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+		}
+
+		article {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			flex: 1;
+			align-items: flex-start;
+		}
+
+		section {
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		section.sticky {
+			flex: 3;
+			position: sticky;
+			top: 0;
+			left: 0;
+			height: 200px;
+		}
+
+		section .note {
+			min-height: 100vh;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+		}
+
+		header, footer {
+			background: #dadada;
+			height: 35px;
+			border: 1px #333 solid;
+		}
+
+    </style>
+  </head>
+  <body>
+  	<div id="root">
+  		<div class="container">
+  			<header>Header</header>
+  			<main>
+  				<article>
+  					<section class="sticky" style="background: green">
+  						<p>Sticky SECTION</p>
+  					</section>
+  					<section>
+  						<div class="note">Text 1</div>
+  						<div class="note">Text 2</div>
+  					</section>
+  				</article>
+  				<article>
+  					<section class="sticky" style="background: green">
+  						<p>Sticky SECTION</p>
+  					</section>
+  					<section>
+  						<div class="note">Text 1</div>
+  						<div class="note">Text 2</div>
+  					</section>
+  				</article>
+  			</main>
+  			<footer>Footer</footer>
+  		</div>
+  	</div>
+    
+  </body>
+</html>

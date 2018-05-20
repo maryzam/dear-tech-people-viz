@@ -16,3 +16,26 @@
 .top-companies .header text {
 	fill: black;
 }
+
+.top-companies.flex {
+	flex-flow: column;
+}
+
+.top-companies section.note {
+	text-align: center;
+	padding: 5px 0 10px 0;
+}
+
+.top-companies section.viz {
+	flex: 1;
+}
+
+.top-companies .label rect {
+	fill: black;
+}
+
+.top-companies .label text {
+	fill: white;
+	pointer-events: none;
+}
+

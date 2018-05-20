@@ -5,17 +5,14 @@ import Visualization from "./Visualization";
 
 import './styles.css';
 
-const Section = (props) => (
-		<article>
-			<section className="viz">
-				<Visualization { ...props } />
-			</section>
+const TopCompaniesSection = (props) => (
+		<article className="top-companies flex">
 			<section className="note">
-				<div>Text 1</div>
-				<div>Text 3</div>
-				<div>Text 2</div>
+				<h2>Top 10 companies by Ranking</h2>
+				<p>Learn more about DearTechPeople methodology <a href="http://www.deartechpeople.com/methodology">here</a></p>
 			</section>
+			<Visualization { ...props } />
 		</article>
 	);
 
-export default Section;
+export default TopCompaniesSection;

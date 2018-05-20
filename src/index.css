@@ -74,6 +74,14 @@ article:last-child {
 	height: calc(100vh - 50px);
 }
 
+article.flex {
+	display: flex;
+	flex-flow: row;
+	align-items: stretch;
+	align-content: center;
+	justify-content: center;
+}
+
 section {
 	position: relative;
 	overflow: hidden;

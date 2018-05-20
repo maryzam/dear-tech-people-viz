@@ -5,7 +5,6 @@ import * as d3 from "d3";
 
 import Provider from "../../utils/dataProvider";
 
-import './styles.css';
 
 const labelSize = { width: 100, height: 30, offset: 10 }
 
@@ -50,14 +49,12 @@ class TopCompaniesViz extends React.PureComponent {
 		const { width, height } = this.props;
 
 		return (
-			<div>
-				<svg className="top-companies" width={ width } height={ height } >
-					{ this.getHeader() }
-					{ this.getAllLinks("technical", "overall") }
-					{ this.getAllLinks("overall", "leadership") }
-					{ this.getAllLabels() }
-				</svg>
-			</div>
+			<svg className="top-companies" width={ width } height={ height } >
+				{ this.getHeader() }
+				{ this.getAllLinks("technical", "overall") }
+				{ this.getAllLinks("overall", "leadership") }
+				{ this.getAllLabels() }
+			</svg>
 		);
 	}
 

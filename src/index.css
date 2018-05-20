@@ -19,24 +19,62 @@ path {
 	fill: none;
 }
 
+.container {
+	min-height: 100vh;
+
+	max-width: 960px;
+	min-width: 480px;
+	margin: 0 auto;
+	
+	overflow: hidden;
+}
+
+/* header and footer */
+header {}
+
 footer {
+	height: 50px;
 	padding: 5px 10px;
 }
 
 footer p {
-	font-size: 10px;
 	color: #7a7a7a;
+	font-size: 0.75em;
 	text-align: right;
-	padding-bottom: 5px;
+	padding-bottom: 0.5em;
 	vertical-align: ce;
 }
 
 footer a {
-	font-weight: bold;
 	color: #7a7a7a;
-	padding-right: 5px;
+	font-weight: bold;
+	padding-right: 1em;
 }
 
 footer a:hover {
 	color: #555;
+}
+
+/* main block */
+
+main { }
+
+article {
+	height: 100vh;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	align-content: stretch;
+	justify-content: center;
+}
+
+article:last-child {
+	height: calc(100vh - 50px);
+}
+
+section {
+	position: relative;
+	overflow: hidden;
 }

@@ -4,3 +4,26 @@
 .overall-by-gender .point {
 	stroke: white;
 }
+
+.viz {
+	width: 100%;
+	height: 100%;
+}
+
+.overall-by-gender .note {
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -40%);
+
+	max-width: 50%;
+    padding: 10px;
+	background: white;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.overall-by-gender .note p {
+	padding-bottom: 5px;
+    pointer-events: none;
+}

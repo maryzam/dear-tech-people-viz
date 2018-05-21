@@ -41,12 +41,12 @@ class TopCompaniesViz extends React.PureComponent {
 		});
 	}
 
-	onResize = throttle(this.updateSize, 200, { trailing: true });
-
 	componentDidMount() {
 		this.container = d3.select(this.viz);
-		this.updateSize();
+		this.onResize = throttle(this.updateSize, 200, { trailing: true });
 		window.addEventListener('resize', this.onResize);
+
+		this.updateSize();
 	}
 
 	componentWillUnmount() {

@@ -1,0 +1,13 @@
+
+.overall-by-race {}
+
+.overall-by-race section {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.overall-by-race .viz {
+	min-width: 480px;
+	min-height: 480px;
+}

@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from "prop-types"; 
 
-const CategorySwitch = ({ categories, current, handleClick }) => (
+const CategorySwitch = ({ categories, label, current, handleClick }) => (
 		<div className="category-switch">
+			<span>{ label }</span>
 			{
 				categories.map((category) => (
 						<button

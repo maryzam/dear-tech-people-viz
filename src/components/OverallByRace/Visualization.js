@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from "prop-types"; 
-
 import * as d3 from "d3";
+import { throttle } from 'lodash'; 
 
 import Provider from "../../utils/dataProvider";
 
@@ -42,56 +41,65 @@ const arc = d3.arc()
 
 class OverallByRaceViz extends React.PureComponent { 
 
-	constructor(props) {
+	state = { width: 400, height: 300}
 
-		super(props);
+	scaleSize = d3.scaleLinear();
+	scaleArcRadius = d3.scaleLinear();
 
-		this.viz = React.createRef();
-		this.scaleSize = d3.scaleLinear();
-		this.scaleArcRadius = d3.scaleLinear();
+	setVizRef = (element) => { this.viz = element; }
+	
+	updateSize = () => {
+		const size = this.container.node().getBoundingClientRect();
+		this.setState({ 
+			width: size.width, 
+			height: size.height
+		});
 	}
 
 	componentDidMount() {
-		this.updateChart();
+		this.container = d3.select(this.viz);
+		this.onResize = throttle(this.updateSize, 200, { trailing: true });
+		window.addEventListener('resize', this.onResize);
+
+		this.updateSize();
 	}
 
-	componentDidUpdate() {
-		this.updateChart();
-	}
-
-	updateChart() {
-		//todo update scales if they've changed
+	componentWillUnmount() {
+		this.onResize.cancel();
+	    window.removeEventListener('resize', this.onResize);
 	}
 
 	render() {
 
-		const { width, height } = this.props;
+		const { width, height } = this.state;
 		const grid = this.getGridSize();
 		const maxRadius =  grid.size / 2; 
 		this.scaleSize.range([0, maxRadius ]);
 		this.scaleArcRadius.range([maxRadius * 0.3, maxRadius]);
 		
 		return (
-			<svg width={width} height={height} ref={ this.viz } >
-				{
-					data.map((d, i) => {
-						const xCenter = grid.size * (Math.floor(i % grid.x) + 0.5);
-						const yCenter = grid.size * (Math.floor(i / grid.x) + 0.5);
-						return (
-							<g key={d.race}
-								transform={`translate(${ xCenter }, ${ yCenter })`}>
-								{ this.renderRoles(d) }
-								{ this.renderOverallGender(d) }
-								{ this.renderOverallRoles(d) }
-								<text dy="-5px">
-									<textPath href={`#${d.race}_other`} startOffset="25%"> 
-										{ d.race } 
-									</textPath>
-								</text>
-							</g>							
-						)})
-				}
-			</svg>
+			<section className="viz" ref={ this.setVizRef } >
+				<svg width={width} height={height} >
+					{
+						data.map((d, i) => {
+							const xCenter = grid.size * (Math.floor(i % grid.x) + 0.5);
+							const yCenter = grid.size * (Math.floor(i / grid.x) + 0.5);
+							return (
+								<g key={d.race}
+									transform={`translate(${ xCenter }, ${ yCenter })`}>
+									{ this.renderRoles(d) }
+									{ this.renderOverallGender(d) }
+									{ this.renderOverallRoles(d) }
+									<text dy="-5px">
+										<textPath href={`#${d.race}_other`} startOffset="25%"> 
+											{ d.race } 
+										</textPath>
+									</text>
+								</g>							
+							)})
+					}
+				</svg>
+			</section>
 		);
 	}
 
@@ -150,7 +158,7 @@ class OverallByRaceViz extends React.PureComponent {
 
     getGridSize() {
 
-    	const { width, height } = this.props;
+    	const { width, height } = this.state;
     	const total = data.length;
     	const ySize = Math.sqrt( total * (height / width));
     	
@@ -164,16 +172,6 @@ class OverallByRaceViz extends React.PureComponent {
 
     	return (ceilGrid.size > floorGrid.size) ? ceilGrid : floorGrid;
     }
-};
-
-OverallByRaceViz.propTypes = {
-	width: PropTypes.number.isRequired,
-	height: PropTypes.number.isRequired,
-	animDuration: PropTypes.number
-};
-
-OverallByRaceViz.defaultProps = {
-	animDuration: 1000
 };
 
 export default OverallByRaceViz;

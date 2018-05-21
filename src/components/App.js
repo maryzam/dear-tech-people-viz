@@ -15,7 +15,7 @@ const Footer = (props) => (
 	);
 
 const App = (props) => (
-		<div className="container">
+		<React.Fragment>
 			<Header />
 			<main>
 				 <OverallByGenderSection {...props} />
@@ -24,7 +24,7 @@ const App = (props) => (
 				 <TopCompaniesSection {...props} />
 			</main>
 			<Footer />
-		</div>
+		</React.Fragment>
 	);
 
 export default App;

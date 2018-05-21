@@ -36,16 +36,23 @@ class OverallBySectorSection extends React.PureComponent {
 
 		return(
 			<article className="overall-by-gender">
-				<section >
+				<section className="viz">
 					<CategorySwitch 
+						label="Role"
 						categories={ roles }
 						current={ role } 
 						handleClick={ this.onRoleChanged } />
 					<CategorySwitch 
+						label="Race"
 						categories={ races }
 						current={ race } 
 						handleClick={ this.onRaceChanged } />
 					<Visualization {...this.props } {...this.state } />
+				</section>
+				<section>
+					<p>Text 1 </p>
+					<p>Text 2 </p>
+					<p>Text 3 </p>
 				</section>
 			</article>
 		);

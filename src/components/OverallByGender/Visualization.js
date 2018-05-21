@@ -82,7 +82,6 @@ class OverallByGenderViz extends React.PureComponent {
 		this.updateViz(0);
 	}
 
-	onResize = throttle(this.updateScales, 200, { trailing: true });
 	
 	static getDerivedStateFromProps(nextProps, prevState) {
 		const newState = getModeOptions(nextProps.mode);
@@ -107,6 +106,7 @@ class OverallByGenderViz extends React.PureComponent {
 		this.updateScales();
 		this.updateViz(0);
 
+		this.onResize = throttle(this.updateScales, 200, { trailing: true });
 		window.addEventListener('resize', this.onResize);
 	}
 
@@ -145,9 +145,10 @@ class OverallByGenderViz extends React.PureComponent {
 
 	render() {
 		const { width, height } = this.state;
+		const { isFixed } = this.props;
 
 		return (
-			<section className="viz" ref={ this.setVizRef }>
+			<div ref={ this.setVizRef }>
 				<svg width={ width } height={ height } >
 					{
 						data.map((d, i) => {
@@ -169,7 +170,7 @@ class OverallByGenderViz extends React.PureComponent {
 							})
 						}
 				</svg>
-			</section>
+			</div>
 		);
 	}
 };
@@ -180,8 +181,8 @@ OverallByGenderViz.propTypes = {
 };
 
 OverallByGenderViz.defaultProps = {
-	mode: "roles",
-	animDuration: 1000
+	mode: "hidden",
+	animDuration: 500
 };
 
 export default OverallByGenderViz;

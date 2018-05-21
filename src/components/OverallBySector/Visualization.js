@@ -13,6 +13,9 @@ const padding = { x: 10, y: 10 }
 
 class OverallBySectorStats extends React.PureComponent {
 
+	setVizRef = (element) => { this.viz = element; }
+	
+
 	constructor(props) {
 		super(props);
 

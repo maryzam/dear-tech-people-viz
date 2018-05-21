@@ -1,29 +1,81 @@
 
 .overall-by-gender {}
 
-.overall-by-gender .point {
-	stroke: white;
+.overall-by-gender section {
+	height: 100vh;
+	width: 100%;
+	max-width: 960px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.viz {
-	width: 100%;
-	height: 100%;
+.overall-by-gender header {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.overall-by-gender .viz {
+	align-content: center;
+	align-items: stretch;
+}
+
+.overall-by-gender .viz > div {
+	align-content: center;
+	flex-grow: 1;
+	flex-shrink: 0;
 }
 
 .overall-by-gender .note {
-	position: absolute;
-    top: 40%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -40%);
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
 
+.overall-by-gender .note > div {
 	max-width: 50%;
-    padding: 10px;
 	background: white;
     background: rgba(255, 255, 255, 0.7);
+    padding: 1em;
+}
+
+.overall-by-gender .note > div p {
+    padding-bottom: 0.5em;
+}
+
+.overall-by-gender span {
+	padding: 0 0.5em;
+	background: black;
+	color: white;
+}
+.overall-by-gender .male {
+	background: steelblue;
+}
+
+.overall-by-gender .female {
+	background: tomato;
+}
+
+.overall-by-gender .fixed {
+	position: fixed;
+}
+
+.overall-by-gender .bottom {
+	position: absolute;
+	top: auto;
+	bottom: 0;
 }
 
 .overall-by-gender .note p {
 	padding-bottom: 5px;
     pointer-events: none;
+}
+
+.overall-by-gender header {
+	width: 100%;
+	padding: 1em 0em;
+}
+
+.overall-by-gender .point {
+	stroke: white;
 }

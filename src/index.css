@@ -19,6 +19,15 @@ path {
 	fill: none;
 }
 
+h1, h3 {
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
 .container {
 	min-height: 100vh;
 
@@ -60,14 +69,10 @@ footer a:hover {
 main { }
 
 article {
-	height: 100vh;
+	position: relative;
 	overflow: hidden;
-
-	display: flex;
-	flex-direction: row;
-	align-items: stretch;
-	align-content: stretch;
-	justify-content: center;
+	min-height: 100vh;
+	padding: 10px 0;
 }
 
 article:last-child {

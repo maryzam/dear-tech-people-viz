@@ -14,14 +14,14 @@ const sectionData = [
 	},
 	{
 		mode: "employees",
-		text: `<p>A new initiative called <a href="http://www.deartechpeople.com/">Dear Tech People</a> analyzed tens of thousands of LinkedIn profiles and now have the data to hold companies accountable.</p>
+		text: `<p>A new initiative called <a href="http://www.deartechpeople.com/">DearTechPeople</a> analyzed tens of thousands of LinkedIn profiles and now have the data to hold companies accountable.</p>
 				<p>They compiled a <span>Race/Gender ranking</span> for 100 tech companies acoording.</p>
 				<p>But who are these people?</p>
 				<p>Let's take a look!</p>`
 	},
 	{
 		mode: "gender",
-		text: `<p>DearTech people used a combination of name analyzers, facial recognition technology, and manual identification through Mechanical Turk to determine an individual employee’s race and gender.</p>
+		text: `<p>DearTechPeople used a combination of name analyzers, facial recognition technology, and manual identification through Mechanical Turk to determine an individual employee’s race and gender.</p>
 			  <p>As the result they've got an information about over than 6'000 people.</p>
 			  <p>About <strong>3'700 profiler</strong> are owened by <span class="male">men</span></p>
 			  <p>And almost <strong>2'400 profiles</strong> have been recognised as <span class="female">female</span></p>`
@@ -68,7 +68,7 @@ class OverallByGenderSection extends React.PureComponent
 	};
 
 	componentDidMount() {
-		this.onScroll = throttle(this.updateSection, 200, { trailing: true });
+		this.onScroll = throttle(this.updateSection, 100, { trailing: true });
 	    this.attachListener();
 	}
 

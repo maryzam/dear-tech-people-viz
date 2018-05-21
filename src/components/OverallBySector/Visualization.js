@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types"; 
+import { throttle } from 'lodash'; 
 
 import * as d3 from "d3";
 
@@ -14,7 +15,6 @@ const padding = { x: 10, y: 10 }
 class OverallBySectorStats extends React.PureComponent {
 
 	setVizRef = (element) => { this.viz = element; }
-	
 
 	constructor(props) {
 		super(props);
@@ -29,6 +29,10 @@ class OverallBySectorStats extends React.PureComponent {
 	componentDidMount() {
 		
 		this.node = d3.select(this.viz);
+	    this.onResize = throttle(this.updateViz, 200, { trailing: true });
+
+	    window.addEventListener('resize', this.onResize);
+
 		this.updateViz();
 	}
 
@@ -36,13 +40,19 @@ class OverallBySectorStats extends React.PureComponent {
 		this.updateViz();
 	}
 
-	updateViz() {
+	componentWillUnmount() {
+		this.onResize.cancel();
+	    window.removeEventListener('resize', this.onResize);
+	}
+
+	updateViz = () => {
 
 		this.updateScales();
 
 		const { race, role, animDuration } = this.props;
 
 		const nodes = this.node
+			.select("svg")
 			.selectAll(".sector")
 			.data(data[race], function(d) { 
 				return d ? d.sector : this.dataset.sector; 
@@ -83,11 +93,11 @@ class OverallBySectorStats extends React.PureComponent {
 			.select(".label")
 			.transition().duration(animDuration)
 			.style("fill-opacity", (d) => (d[role].all > 0 ? 1 : 0.3 ))
-
 	}
 
 	updateScales() {
-		const { race, role, height, width } = this.props;
+		const { race, role } = this.props;
+		const { width, height } = this.node.node().getBoundingClientRect();
 
 		const vizHeight = height - padding.y * 2;
 		const vizWidth = width - labelOffset - padding.y * 2;
@@ -98,6 +108,11 @@ class OverallBySectorStats extends React.PureComponent {
 		const maxRadius = this.scaleSectors.step() / 2;
 		const maxCount = d3.max(data[race], (d) => (Math.max(d[role].male, d[role].female)));
 		this.scaleTotal.range([3, maxRadius]).domain([0, maxCount]);
+
+		this.node
+				.select("svg")
+				.attr("width", width)
+				.attr("height", height);
 	}
 
 	render() {
@@ -108,43 +123,42 @@ class OverallBySectorStats extends React.PureComponent {
 		const xMax = this.scaleFreq(1);
 
 		return (
-			<svg ref={ this.setVizRef }
-					className="overall-by-gender"
-					width={width} 
-					height={height} >
-				<g transform={`translate(${labelOffset},${padding.y})`}>
-				{
-					data[race].map((d) => {
-						return (
-							<g key={ d.sector }
-								data-sector={ d.sector }
-								className="sector"
-								transform={`translate(0, ${this.scaleSectors(d.sector)})`}>
-								<line 
-									className="axis"
-									x1={ xMin } y1={0} 
-									x2={ xMax } y2={0}/>	
-								<line 
-									className="gap"
-									x1={ xMiddle } y1={0} 
-									x2={ xMiddle } y2={0} />	
-								<circle 
-									className="male"
-									cx={ xMiddle } cy={0} r={0} />	
-								<circle 
-									className="female"
-									cx={ xMiddle } cy={0} r={0}/>	
-								<text 
-									className="label"
-									dx={-7} dy={2}>
-									{d.sector}
-								</text>
-							</g>
-						);
-					})
-				}
-				</g>
-			</svg>
+			<section className="viz" ref={ this.setVizRef }>
+				<svg width={width} height={height} >
+					<g transform={`translate(${labelOffset},${padding.y})`}>
+					{
+						data[race].map((d) => {
+							return (
+								<g key={ d.sector }
+									data-sector={ d.sector }
+									className="sector"
+									transform={`translate(0, ${this.scaleSectors(d.sector)})`}>
+									<line 
+										className="axis"
+										x1={ xMin } y1={0} 
+										x2={ xMax } y2={0}/>	
+									<line 
+										className="gap"
+										x1={ xMiddle } y1={0} 
+										x2={ xMiddle } y2={0} />	
+									<circle 
+										className="male"
+										cx={ xMiddle } cy={0} r={0} />	
+									<circle 
+										className="female"
+										cx={ xMiddle } cy={0} r={0}/>	
+									<text 
+										className="label"
+										dx={-7} dy={2}>
+										{d.sector}
+									</text>
+								</g>
+							);
+						})
+					}
+					</g>
+				</svg>
+			</section>
 		);
 	}
 }
@@ -152,8 +166,6 @@ class OverallBySectorStats extends React.PureComponent {
 OverallBySectorStats.propTypes = {
 	race: PropTypes.string,
 	role: PropTypes.string,
-	width: PropTypes.number.isRequired,
-	height: PropTypes.number.isRequired,
 	animDuration: PropTypes.number
 };
 

@@ -19,7 +19,7 @@ path {
 	fill: none;
 }
 
-h1, h3 {
+h1, h2, h3 {
 	font-family: 'Roboto Slab', serif;
 	text-align: center;
 }
@@ -79,7 +79,7 @@ article:last-child {
 	height: calc(100vh - 50px);
 }
 
-article.flex {
+.flex {
 	display: flex;
 	flex-flow: row;
 	align-items: stretch;
@@ -90,4 +90,9 @@ article.flex {
 section {
 	position: relative;
 	overflow: hidden;
+}
+
+.flex section {
+	display: flex;
+	flex-flow: column;
 }

@@ -1,7 +1,25 @@
 
-.overall-by-gender { }
+.overall-by-sector { }
 
-.overall-by-gender .btn {
+.overall-by-sector header { 
+	width: 100%;
+	min-width: 100%;
+	padding: 2em 0 1em;
+}
+
+.overall-by-sector .note {
+	min-width: 250px;
+}
+
+.overall-by-sector .viz {
+	flex: 1;
+}
+
+ .overall-by-sector .category-switch span {
+ 	display: block;
+ }
+
+.overall-by-sector .btn {
 	color: #333;
 	background: #fff;
 	border: 1px solid #333;
@@ -11,34 +29,34 @@
 	cursor: pointer;
 }
 
-.overall-by-gender .btn:hover,
-.overall-by-gender .current {
+.overall-by-sector .btn:hover,
+.overall-by-sector .current {
 	color: #fff;
   	background: #333;
 }
 
-.overall-by-gender .axis {
+.overall-by-sector .axis {
 	stroke: #aaa;
 	stroke-dasharray: 2 2;
 }
 
-.overall-by-gender .female {
+.overall-by-sector .female {
 	fill: tomato;
 	fill-opacity: 0.5;
 	stroke: tomato;
 }
 
-.overall-by-gender .male {
+.overall-by-sector .male {
 	fill: steelblue;
 	fill-opacity: 0.5;
 	stroke: steelblue;
 }
 
-.overall-by-gender .gap {
+.overall-by-sector .gap {
 	stroke: #333;
 }
 
-.overall-by-gender text {
+.overall-by-sector text {
 	text-anchor: end;
 	pointer-events: none;
 	font-size: 10px;

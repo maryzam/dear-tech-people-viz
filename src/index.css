@@ -96,3 +96,17 @@ section {
 	display: flex;
 	flex-flow: column;
 }
+
+span {
+	padding: 0 0.5em;
+	background: black;
+	color: white;
+}
+
+span.male {
+	background: steelblue;
+}
+
+span.female {
+	background: tomato;
+}

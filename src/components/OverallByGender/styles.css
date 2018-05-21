@@ -43,19 +43,6 @@
     padding-bottom: 0.5em;
 }
 
-.overall-by-gender span {
-	padding: 0 0.5em;
-	background: black;
-	color: white;
-}
-.overall-by-gender .male {
-	background: steelblue;
-}
-
-.overall-by-gender .female {
-	background: tomato;
-}
-
 .overall-by-gender .fixed {
 	position: fixed;
 }

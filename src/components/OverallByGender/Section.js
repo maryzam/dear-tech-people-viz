@@ -44,7 +44,7 @@ class OverallByGenderSection extends React.PureComponent
 {
 	state = {
 		mode: "hidden",
-		isFixed: true
+		isFixed: false
 	};
 
 	setNodeRef = (element) => { this.node = element; }
@@ -69,6 +69,7 @@ class OverallByGenderSection extends React.PureComponent
 
 	componentDidMount() {
 		this.onScroll = throttle(this.updateSection, 100, { trailing: true });
+		this.updateSection();
 	    this.attachListener();
 	}
 

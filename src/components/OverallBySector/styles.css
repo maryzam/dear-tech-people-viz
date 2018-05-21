@@ -9,15 +9,22 @@
 
 .overall-by-sector .note {
 	min-width: 250px;
+	flex: 1;
 }
 
 .overall-by-sector .viz {
-	flex: 1;
+	flex: 3;
 }
 
  .overall-by-sector .category-switch span {
  	display: block;
+ 	background: none;
+ 	color: black;
  }
+
+.overall-by-sector p {
+	padding-top: 1em;
+}
 
 .overall-by-sector .btn {
 	color: #333;

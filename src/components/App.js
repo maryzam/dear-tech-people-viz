@@ -19,8 +19,8 @@ const App = (props) => (
 			<Header />
 			<main>
 				 <OverallByGenderSection {...props} />
-				 <OverallBySectorSection {...props} />
 				 <OverallByRaceSection {...props} />
+				 <OverallBySectorSection {...props} />
 				 <TopCompaniesSection {...props} />
 			</main>
 			<Footer />

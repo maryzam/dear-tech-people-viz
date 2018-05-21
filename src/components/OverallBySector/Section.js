@@ -52,6 +52,16 @@ class OverallBySectorSection extends React.PureComponent {
 							categories={ races }
 							current={ race } 
 							handleClick={ this.onRaceChanged } />
+						<p>
+							According to the data, we still can distinguish <span className="male">male</span> and <span className="female">female</span> industries.
+						</p>
+						<p>
+							The <span>highest gap</span> between men & women even on non-tech positions is in such sectors as <strong>Security, Hardware and Infrastructure</strong>
+						</p>
+						<p>
+							However, <strong>Ecommerce, Media & Helthcare</strong> companies have more female employees overall.
+							But even in these industries there is <span>gender breakdown</span> in Tech&Leadership positions
+						</p>
 					</section>
 				</div>
 			</article>

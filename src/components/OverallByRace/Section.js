@@ -6,13 +6,16 @@ import Visualization from "./Visualization";
 import './styles.css';
 
 const OverallByRaceSection = (props) => (
-		<article className="flex overall-by-race">
-			<section className="note">
-				<div>Text 1</div>
-				<div>Text 3</div>
-				<div>Text 2</div>
-			</section>
-			<Visualization { ...props } />
+		<article className="overall-by-race">
+			<header>
+				<h1>Are the situation the same across the races?</h1>
+			</header>
+			<div className="flex">
+				<section className="note">
+					<p></p>
+				</section>
+				<Visualization { ...props } />
+			</div>
 		</article>
 	);
 

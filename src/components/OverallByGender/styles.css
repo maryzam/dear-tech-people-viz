@@ -63,6 +63,10 @@
 	padding: 1em 0em;
 }
 
+.overall-by-gender .centered {
+	text-align: center;
+}
+
 .overall-by-gender .point {
 	stroke: white;
 }

@@ -26,13 +26,15 @@ const sectionData = [
 		text: `<p>DearTechPeople gathered information about over than 6'000 people from 100+ companies.</p>
 			  <p>About <strong>3'700 of these profiler</strong> belong <span class="male">men</span></p>
 			  <p>And almost <strong>2'400 profiles</strong> have been recognised as <span class="female">female</span></p>
-			  <p>DearTechPeople used a combination of name analyzers, facial recognition technology, and manual identification through Mechanical Turk to determine an individual employee’s race and gender.</p>`
+			  <p>DearTechPeople used a combination of name analyzers, facial recognition technology, and manual identification through Mechanical Turk to determine an individual employee’s race and gender.</p>
+			  <p>⇓</p>`
 	},
 	{
 		mode: "roles",
 		text: `<p>They divided employees by their roles as well</p>
 			   <p>They defined <span>technical</span> to be anyone who conducts a job that is technical in nature, regardless of whether they are specifically in the engineering department</p>
-			   <p>They've chosen to classify <span>leadership</span> as anyone who is a VP and above (CEO, CTO, CMO and etc.)</p>`
+			   <p>They've chosen to classify <span>leadership</span> as anyone who is a VP and above (CEO, CTO, CMO and etc.)</p>
+			   <p>⇓</p>`
 	}
 ];
 

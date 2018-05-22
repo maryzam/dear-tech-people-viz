@@ -16,3 +16,39 @@
 	min-width: 100%;
 	padding: 2em 0 1em;
 }
+
+.overall-by-race p {
+	padding: 0 0 1em;
+}
+
+.overall-by-race .leaf {
+	padding: 0.3em;
+	border: 1px white solid;
+}
+
+.overall-by-race .leaf.female {
+	border-bottom-right-radius: 1em;
+  	border-top-right-radius: 1em;
+}
+
+.overall-by-race .leaf.male {
+	border-bottom-left-radius: 1em;
+  	border-top-left-radius: 1em;
+}
+
+.overall-by-race .leadership {
+	opacity: 0.8;
+}
+
+.overall-by-race .tech {
+	opacity: 0.6;
+}
+
+.overall-by-race .other {
+	opacity: 0.3;
+}
+
+.overall-by-race .label {
+	background: none;
+	color: black;
+}

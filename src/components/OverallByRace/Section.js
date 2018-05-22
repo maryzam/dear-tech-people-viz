@@ -37,9 +37,9 @@ const OverallByRaceSection = (props) => (
 					 	<span className="leaf female other"></span>
 					 	<span className="label">Other roles</span>
 					 </p>
-					 <p>Grey arcs display the percentage of each role types</p>
-					 <p>Blue&Red arcs show the overall gender ration</p>
-					  <p>
+					 <p>Grey arcs display the percentage of each role types.</p>
+					 <p>Blue&Red arcs show the overall gender ratio.</p>
+					 <p>
 					 	For more interesting facts hover the charts
 					 </p>
 				</section>

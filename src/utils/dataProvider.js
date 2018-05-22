@@ -48,6 +48,14 @@ function generatePoinst(gender, total, tech, leadership) {
 	return points;
 }
 
+function getOverallByRace() {
+	const data = {}
+	overallByRaceGender.map((d) => {
+		data[d.race] = Object.assign({}, d);
+	});
+	return data;
+}
+
 function getOverallByRaceAndGender() {
 
 	return overallByRaceGender.map((d) => {
@@ -89,6 +97,7 @@ export default {
 	getRoles,
 	getRaces,
 	getSectors,
+	getOverallByRace,
 	getOverallByRaceAndGender,
 	getOverallByGender,
 	getOverallBySectors,

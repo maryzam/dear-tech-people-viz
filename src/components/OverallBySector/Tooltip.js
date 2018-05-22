@@ -1,19 +1,17 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-function formatWord(word) {
-	return word.charAt(0).toUpperCase() + word.slice(1);
-}
+import { capitalizeFirstLetter } from "../../utils/stringFormatting";
 
 function getHeader(gender, race, role) {
 
 	const who = (gender === "male") ? "Men" : "Women";
-	const raceFormated = (race === "all") ? "" : formatWord(race);
-	const roleFormated = formatWord(role);
+	const raceFormated = (race === "all") ? "" : capitalizeFirstLetter(race);
+	const roleFormated = capitalizeFirstLetter(role);
 
 	return (
 		<div className={`header ${gender}`}>
-			{raceFormated} {who} in { formatWord(role)} roles
+			{raceFormated} {who} in { capitalizeFirstLetter(role)} roles
 		</div>
 	);
 }

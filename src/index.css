@@ -126,6 +126,7 @@ span {
 
 .tooltip .header {
 	color: white;
+	background: black;
 	text-align: center;
 }
 
@@ -135,4 +136,9 @@ span {
 
 .tooltip p {
 	padding: 0 0 0.5em;
+}
+
+table td {
+	border: 1px #dadada solid;
+	padding: 0.5em;
 }

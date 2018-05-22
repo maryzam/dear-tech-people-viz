@@ -2,6 +2,7 @@ import React from 'react';
 import * as d3 from "d3";
 import { throttle } from 'lodash'; 
 
+import Tooltip from "./Tooltip";
 import Provider from "../../utils/dataProvider";
 
 const roles = Provider.getRoles();
@@ -41,12 +42,42 @@ const arc = d3.arc()
 
 class OverallByRaceViz extends React.PureComponent { 
 
-	state = { width: 400, height: 300}
+	state = { 
+		width: 400, 
+		height: 300,
+		hovered: null,
+		tooltipPos: null
+	}
 
 	scaleSize = d3.scaleLinear();
 	scaleArcRadius = d3.scaleLinear();
 
 	setVizRef = (element) => { this.viz = element; }
+
+	setupTooltip = (e) => {
+		e.stopPropagation();
+		console.log(e);
+		const { race } = e.target.dataset;
+		const pos = {
+			x : e.clientX,
+			y: e.clientY
+		}
+		this.setState({ hovered: race, tooltipPos: pos });
+	}
+
+	hideTooltip = (e) => {
+		e.stopPropagation();
+		this.setState({ hovered: null, tooltipPos: null });
+	}
+
+	updateTooltip = (e) => {
+		e.stopPropagation();
+		const pos = {
+			x : e.clientX,
+			y: e.clientY
+		}
+		this.setState({ tooltipPos: pos });
+	}
 	
 	updateSize = () => {
 		const size = this.container.node().getBoundingClientRect();
@@ -95,10 +126,22 @@ class OverallByRaceViz extends React.PureComponent {
 											{ d.race } 
 										</textPath>
 									</text>
+									<rect data-race={d.race}
+										width={ grid.size } height={grid.size}
+										style={{ 
+											fill: "white", fillOpacity: 0,
+											stroke: "none", strokeOpacity: 0,
+											pointerEvents: "all" 
+										}}
+										transform={`translate(${ -maxRadius }, ${ -maxRadius })`}
+										onMouseMove = { this.updateTooltip } 
+									   	onMouseOut = { this.hideTooltip } 
+									   	onMouseOver = { this.setupTooltip } />
 								</g>							
 							)})
 					}
 				</svg>
+				<Tooltip {...this.state } />
 			</section>
 		);
 	}

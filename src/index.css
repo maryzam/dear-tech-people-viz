@@ -103,10 +103,36 @@ span {
 	color: white;
 }
 
-span.male {
+.male {
 	background: steelblue;
 }
 
-span.female {
+.female {
 	background: tomato;
+}
+
+/* tooltip */
+
+.tooltip {
+	position: fixed;
+	pointer-events: none;
+	z-index: 10;
+	font-size: 0.7em;
+	background: white;
+	border: 1px solid rgb(170, 170, 170);
+	border-radius: 3px;
+	box-shadow: rgb(170, 170, 170) 0px 0px 5px;
+}
+
+.tooltip .header {
+	color: white;
+	text-align: center;
+}
+
+.tooltip div {
+	padding: 0.5em;
+}
+
+.tooltip p {
+	padding: 0 0 0.5em;
 }

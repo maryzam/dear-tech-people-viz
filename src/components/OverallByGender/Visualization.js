@@ -68,7 +68,7 @@ class OverallByGenderViz extends React.PureComponent {
 		const yStep = height / pointsGrid.y / 2;
 
 		this.scaleX.range([xStep, (width + xStep)]);
-		this.scaleY.range([(height - yStep), -yStep]);
+		this.scaleY.range([(height - 2 * yStep), -yStep]);
 
 		const maxRadius = Math.min(xStep, yStep) * 0.9;
 		const minRadius = maxRadius * 0.8;

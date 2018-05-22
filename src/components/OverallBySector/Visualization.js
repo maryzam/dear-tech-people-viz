@@ -5,6 +5,7 @@ import { throttle } from 'lodash';
 import * as d3 from "d3";
 
 import Provider from "../../utils/dataProvider";
+import Tooltip from "./Tooltip";
 
 const sectors = Provider.getSectors();
 const data = Provider.getOverallBySectors();
@@ -14,17 +15,17 @@ const padding = { x: 10, y: 10 }
 
 class OverallBySectorStats extends React.PureComponent {
 
-	setVizRef = (element) => { this.viz = element; }
-
-	constructor(props) {
-		super(props);
-
-		this.setVizRef = (element) => { this.viz = element; };
-
-		this.scaleSectors = d3.scalePoint().domain(sectors).round(true);
-		this.scaleFreq = d3.scaleLinear();
-		this.scaleTotal = d3.scaleLinear();
+	state = {
+		gender: null,
+		data: null,
+		position: null
 	}
+
+	setVizRef = (element) => { this.viz = element; };
+
+	scaleSectors = d3.scalePoint().domain(sectors).round(true);
+	scaleFreq = d3.scaleLinear();
+	scaleTotal = d3.scaleLinear();
 
 	componentDidMount() {
 		
@@ -33,7 +34,8 @@ class OverallBySectorStats extends React.PureComponent {
 
 	    window.addEventListener('resize', this.onResize);
 
-		this.updateViz();
+	    this.updateViz();
+	    this.addHoverEvents();
 	}
 
 	componentDidUpdate() {
@@ -43,6 +45,28 @@ class OverallBySectorStats extends React.PureComponent {
 	componentWillUnmount() {
 		this.onResize.cancel();
 	    window.removeEventListener('resize', this.onResize);
+	}
+
+	setupTooltip = (data) => {
+		const position = { 
+			x: d3.event.clientX,
+			y: d3.event.clientY 
+		};
+		const target = d3.event.target;
+		const gender = target.dataset.gender;
+		this.setState({ position, data, gender });
+	}
+
+	updateTooltip = () => {
+		const position = { 
+			x: d3.event.clientX,
+			y: d3.event.clientY 
+		};
+		this.setState({ position });
+	}
+
+	removeTooltip = () => {
+		this.setState({ gender: null, position: null, data: null });
 	}
 
 	updateViz = () => {
@@ -67,6 +91,7 @@ class OverallBySectorStats extends React.PureComponent {
 			.transition().duration(animDuration)
 			.attr("cx", (d) => this.scaleFreq(d[role].freq.male))
 			.attr("r", (d) => this.scaleTotal(d[role].male))
+			.attr("data-gender", "male")
 			.style("fill-opacity", (d) => (d[role].male > 0 ? 0.5 : 1e-6));
 
 		nodes
@@ -74,6 +99,7 @@ class OverallBySectorStats extends React.PureComponent {
 			.transition().duration(animDuration)
 			.attr("cx", (d) => this.scaleFreq(d[role].freq.female))
 			.attr("r", (d) => this.scaleTotal(d[role].female))
+			.attr("data-gender", "female")
 			.style("fill-opacity", (d) => (d[role].female > 0 ? 0.5 : 1e-6));
 
 		nodes
@@ -93,6 +119,17 @@ class OverallBySectorStats extends React.PureComponent {
 			.select(".label")
 			.transition().duration(animDuration)
 			.style("fill-opacity", (d) => (d[role].all > 0 ? 1 : 0.3 ))
+	}
+
+	addHoverEvents() {
+		const nodes = this.node
+			.select("svg")
+			.selectAll(".mark");
+
+		nodes
+			.on("mouseover", this.setupTooltip)
+			.on("mouseout", this.removeTooltip)
+			.on("mousemove", this.updateTooltip);
 	}
 
 	updateScales() {
@@ -142,10 +179,10 @@ class OverallBySectorStats extends React.PureComponent {
 										x1={ xMiddle } y1={0} 
 										x2={ xMiddle } y2={0} />	
 									<circle 
-										className="male"
+										className="male mark"
 										cx={ xMiddle } cy={0} r={0} />	
 									<circle 
-										className="female"
+										className="female mark"
 										cx={ xMiddle } cy={0} r={0}/>	
 									<text 
 										className="label"
@@ -158,6 +195,7 @@ class OverallBySectorStats extends React.PureComponent {
 					}
 					</g>
 				</svg>
+				<Tooltip {...this.state } {...this.props} />
 			</section>
 		);
 	}

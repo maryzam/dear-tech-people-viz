@@ -105,11 +105,11 @@ span {
 }
 
 .male {
-	background: steelblue;
+	background: #057896;
 }
 
 .female {
-	background: tomato;
+	background: #FC0458;
 }
 
 /* tooltip */

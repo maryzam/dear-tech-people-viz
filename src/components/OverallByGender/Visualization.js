@@ -36,7 +36,7 @@ const roles = Provider.getRoles();
 
 const scaleColor = d3.scaleOrdinal()
 					.domain(["male", "female"])
-					.range(["steelblue", "tomato"]);
+					.range(["#057896", "#FC0458"]);
 
 const scaleOpacity = d3.scalePoint()
 					.domain(roles)

@@ -13,7 +13,7 @@ const angleTan = Math.tan(angle);
 
 const scaleGenderColor = d3.scaleOrdinal()
 					.domain(["male", "female"])
-					.range(["steelblue", "tomato"]);
+					.range(["#057896", "#FC0458"]);
 
 const scaleRoleColor = d3.scaleOrdinal()
 					.domain(roles)

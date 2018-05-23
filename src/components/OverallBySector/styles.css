@@ -48,15 +48,15 @@
 }
 
 .overall-by-sector .female {
-	fill: tomato;
+	fill: #FC0458;
 	fill-opacity: 0.5;
-	stroke: tomato;
+	stroke: #FC0458;
 }
 
 .overall-by-sector .male {
-	fill: steelblue;
+	fill: #057896;
 	fill-opacity: 0.5;
-	stroke: steelblue;
+	stroke: #057896;
 }
 
 .overall-by-sector .gap {

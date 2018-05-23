@@ -113,7 +113,7 @@ class OverallBySectorStats extends React.PureComponent {
 			.transition().duration(animDuration)
 			.attr("x1", (d) => this.scaleFreq(d[role].freq.female))
 			.attr("x2", (d) => this.scaleFreq(d[role].freq.male))
-			.style("stroke", (d) => (d[role].freq.female < 0.5 ? "steelblue": "tomato"));
+			.style("stroke", (d) => (d[role].freq.female < 0.5 ? "#057896": "#FC0458"));
 
 		nodes
 			.select(".label")

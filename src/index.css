@@ -28,6 +28,18 @@ h1 {
 	font-size: 1.5em;
 }
 
+a {
+	color: black;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 1px dotted #333;
+}
+
+a:hover {
+	border-bottom-style: solid;
+}
+
 .container {
 	min-height: 100vh;
 
@@ -44,24 +56,13 @@ header {}
 footer {
 	height: 50px;
 	padding: 5px 10px;
+	border-top: 1px #777 solid;
 }
 
 footer p {
 	color: #7a7a7a;
-	font-size: 0.75em;
+	font-size: 0.7em;
 	text-align: right;
-	padding-bottom: 0.5em;
-	vertical-align: ce;
-}
-
-footer a {
-	color: #7a7a7a;
-	font-weight: bold;
-	padding-right: 1em;
-}
-
-footer a:hover {
-	color: #555;
 }
 
 /* main block */

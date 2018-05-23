@@ -12,8 +12,8 @@ const OverallByRaceSection = (props) => (
 			</header>
 			<div className="flex">
 				<section className="note">
-					<p>Distribution by Roles are different across the races</p>
-					<p>White people have the highest persentage of employees at <span>Leadership positions (4.2%)</span>.
+					<p>Distribution by Roles is different across the races</p>
+					<p>White people have the highest percentage of employees at <span>Leadership positions (4.2%)</span>.
 					 However only 1.6% of Black people are on the Leadership positions as well.</p>
 					<p>Otherwise, there is a largest gender breakdown in Tech between white men and women.
 					  <span>Only 16% of employees</span> of this category are <span className="female">women</span>.

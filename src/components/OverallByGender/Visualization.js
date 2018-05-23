@@ -182,7 +182,7 @@ OverallByGenderViz.propTypes = {
 
 OverallByGenderViz.defaultProps = {
 	mode: "hidden",
-	animDuration: 500
+	animDuration: 400
 };
 
 export default OverallByGenderViz;

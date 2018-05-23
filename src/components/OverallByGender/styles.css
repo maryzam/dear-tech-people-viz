@@ -55,7 +55,6 @@
 
 .overall-by-gender .note p {
 	padding-bottom: 5px;
-    pointer-events: none;
 }
 
 .overall-by-gender header {
@@ -69,4 +68,9 @@
 
 .overall-by-gender .point {
 	stroke: white;
+}
+
+.overall-by-gender small {
+	font-size: 0.7em;
+	color: #777;
 }

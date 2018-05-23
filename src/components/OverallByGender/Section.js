@@ -10,23 +10,24 @@ const sectionData = [
 	{
 		mode: "hidden",
 		text: `<p>Most of us agree that tech could be a little more diverse.</p>
-		       <p>But is it still a real problem nowdays even for the most progressive Companies and Start Ups  of San Francisco?</p>
+		       <p>But is it still a real problem nowadays, even for the most progressive Companies and Startups  of San Francisco?</p>
 		       <p></p>
-		       <p class="centered"><span>Scroll Down</span><br/>⇓</p>`
+		       <p class="centered"><span>Scroll Down</span><br/><small>(Best on Chrome/Firefox with
+resolution higher than 1024x768)</small><br/>⇓</p>`
 	},
 	{
 		mode: "employees",
 		text: `<p>A new initiative called <a href="http://www.deartechpeople.com/">DearTechPeople</a> compiled a <span>Race/Gender ranking</span> for 100 tech companies.</p>
-				<p>For that purpose they analyzed tens of thousands of  <span>LinkedIn profiles</span> and now have the data to hold companies accountable.</p>
+				<p>For that purpose they analyzed tens of thousands of <span>LinkedIn profiles</span> and now have the data to hold companies accountable.</p>
 				<p class="centered">But who are these people?</p>
 				<p class="centered">Let's take a look!<br/>⇓</p>`
 	},
 	{
 		mode: "gender",
 		text: `<p>DearTechPeople gathered information about over than 6'000 people from 100+ companies.</p>
-			  <p>About <strong>3'700 of these profiler</strong> belong <span class="male">men</span></p>
-			  <p>And almost <strong>2'400 profiles</strong> have been recognised as <span class="female">female</span></p>
-			  <p>DearTechPeople used a combination of name analyzers, facial recognition technology, and manual identification through Mechanical Turk to determine an individual employee’s race and gender.</p>
+			  <p>About <strong>3'700 of these profiles</strong> belong <span class="male">men</span></p>
+			  <p>And almost <strong>2'400 profiles</strong> have been recognized as <span class="female">female</span></p>
+			  <p>DearTechPeople used a combination of name analyzers, facial recognition technology, and manual identification through Mechanical Turk to determine an individual employees race and gender.</p>
 			  <p class="centered">⇓</p>`
 	},
 	{
@@ -39,9 +40,10 @@ const sectionData = [
 ];
 
 function isMainViewport(bounding) {
+	const offset = 0.3;
 	const heigth = (window.innerHeight || document.documentElement.clientHeight);
-	return (bounding.top >= 0 && bounding.top / heigth < 0.5) || 
-		   (bounding.top < 0 && bounding.bottom >= 0 && bounding.bottom / heigth > 0.5 );
+	return (bounding.top >= 0 && bounding.top / heigth < (1-offset)) || 
+		   (bounding.top < 0 && bounding.bottom >= 0 && bounding.bottom / heigth > offset );
 }
 
 class OverallByGenderSection extends React.PureComponent 

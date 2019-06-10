@@ -289,3 +289,6 @@ __pycache__/
 
 data_preprocessing/.*
 data_preprocessing/.Rhistory
+
+
+package-lock.json
